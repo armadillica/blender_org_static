@@ -64,11 +64,19 @@
 <section>
     <article>
         <h1>This page is not available</h1>
-        <p>You can read a copy on the <a href="https://web.archive.org/web/20210312012016/https://blender.org/">Internet Archive</a>.</p>
+        <p>You can read a copy on the <a id="archive" href="https://web.archive.org/web/20210312012016/https://blender.org/">Internet Archive</a>.</p>
         <small>The official blender.org site will be back as soon as possible.</small>
     </article>
 </section>
 
 
 
-</body></html>
+</body>
+
+<script type="text/javascript">
+
+    const redir = 'https://web.archive.org/web/20210312012016/https://blender.org' + window.location.pathname;
+    document.getElementById("archive").href = redir;
+
+</script>
+</html>
