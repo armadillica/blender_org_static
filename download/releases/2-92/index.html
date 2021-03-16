@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title>  2.92 &mdash; blender.org</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A completely new workflow for editing meshes, new physics simulation methods, faster Cycles rendering, better compositing with Eevee, and so much more.">
+
+
+		<meta name="author" content="Blender Foundation">
+		<meta name="theme-color" content="#ed8f31">
+		<meta property="og:site_name" content="blender.org">
+		<meta property="og:title" content="  2.92 &mdash; blender.org">
+		<meta property="og:description" content="A completely new workflow for editing meshes, new physics simulation methods, faster Cycles rendering, better compositing with Eevee, and so much more.">
+		<meta property="og:url" content="./download/releases/2-92/">
+		<meta property="og:image" content="./wp-content/uploads/2021/02/blender_thumbnail_292.jpg">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@blender_org">
+		<meta name="twitter:title" content="  2.92 &mdash; blender.org">
+		<meta name="twitter:description" content="A completely new workflow for editing meshes, new physics simulation methods, faster Cycles rendering, better compositing with Eevee, and so much more.">
+		<meta name="twitter:image" content="./wp-content/uploads/2021/02/blender_thumbnail_292.jpg">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="./../../../wp-content/themes/bthree/assets/images/favicon.ico?x18334">
+		<link rel="stylesheet" href="./../../../wp-content/themes/bthree/style.css?x18334" type="text/css" media="screen">
+
+		<link rel="dns-prefetch" href="./../../../">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./../../../wp-includes/css/dist/block-library/style.min.css?x18334" type="text/css" media="all">
+<link rel="stylesheet" id="wp-show-posts-css" href="./../../../wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?x18334" type="text/css" media="all">
+<link rel="https://api.w.org/" href="./../../../wp-json/index.html">
+<link rel="alternate" type="application/json" href="./../../../wp-json/wp/v2/pages/75072/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.6.2">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./../../../index.html?p=75072">
+<link rel="alternate" type="application/json+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2Fdownload%2Freleases%2F2-92%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2Fdownload%2Freleases%2F2-92%2F&#038;format=xml">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+
+	<body class="ps-2-92">
+		<div id="isolated"></div>
+		<div class="container-main">
+
+
+		<nav class="navbar navbar-expand-md navbar-primary fixed-top" role="navigation">
+			<div class="container">
+				<a class="navbar-brand navbar-logo-blender" href="./../../../index.html" title="Go to blender.org"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-menu">
+					<ul class="navbar-nav ml-auto">
+						<li id="menu-item-58172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58172"><a href="./../../../features/index.html" class="nav-link">Features</a></li>
+<li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-125"><a title="Download" href="./../../index.html" class="nav-link">Download</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="./../../../support/index.html" class="nav-link">Support</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="./../../../get-involved/index.html" class="nav-link">Get Involved</a></li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./../../../about/index.html" class="nav-link">About</a></li>
+<li id="menu-item-71848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71848"><a href="./../../../jobs/index.html" class="nav-link">Jobs</a></li>
+<li id="menu-item-1972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972"><a href="http://store.blender.org/" class="nav-link">Store</a></li>
+<li id="menu-item-30672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30672"><a title="Join the Development Fund" href="https://fund.blender.org/" class="nav-link"><i class="fa fa-heart"></i> Donate</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+
+
+<div class="featured large" style="background-image: url(./../../../wp-content/uploads/2021/02/splash_artwork_s_joanna_kobierska.jpg); ">
+
+
+	<div class="container justify-content-center text-">
+		<div class="featured-content align-self-start">
+			<h1 class="mx-4 display-4">
+				<strong>Create the impossible.</strong>			</h1>
+
+
+							<div class="page-header-main-ctas px-3 justify-content-start">
+											<div class="page-header-main-cta">
+							<a href="./../../index.html" class="cta-primary">
+								<i class="fa fa-download"></i> Download Blender 2.92							</a>
+						</div>
+																<div class="page-header-main-cta">
+							<a href="https://www.youtube.com/watch?v=BnXQMxr5xg8" class="cta-secondary">
+								<i class="fa fa-youtube-play"></i> Watch the Features Video							</a>
+						</div>
+									</div>
+					</div>
+	</div>
+
+	<div class="featured-credits">Joanna Kobierska</div>
+
+
+	<div style="opacity: 0.5;" class="featured-overlay"></div>
+</div>
+
+			<nav class="navbar navbar-secondary" role="navigation">
+				<div class="container">
+					<ul class="navbar-nav  mx-auto">
+													<li class="nav-item px-0">
+								<a class="nav-link text-center text-muted" href="./../../index.html">
+									Download								</a>
+							</li>
+							<li class="nav-item text-center" style="pointer-events: none">
+								<a class="pr-0" style="padding: 0 !important;" href="./../../index.html"><i class="fa fa-angle-right" style="padding: 0 !important;"></i></a>
+							</li>
+												<li class="page_item page-item-70621"><a href="./../../lts/index.html">Long-term Support</a></li>
+<li class="page_item page-item-3459 page_item_has_children current_page_ancestor current_page_parent"><a href="./../index.html">Release Notes</a></li>
+<li class="page_item page-item-157"><a href="./../../requirements/index.html">Requirements</a></li>
+<li class="page_item page-item-24170"><a href="./../../demo-files/index.html">Demo Files</a></li>
+<li class="page_item page-item-112"><a href="./../../previous-versions/index.html">Previous Versions</a></li>
+					</ul>
+				</div>
+			</nav>
+					<nav class="navbar navbar-secondary" role="navigation">
+				<div class="container">
+					<ul class="navbar-nav  mx-auto">
+												<li class="page_item page-item-75072 current_page_item"><a href="./index.html" aria-current="page">2.92</a></li>
+<li class="page_item page-item-73822"><a href="./../2-91/index.html">2.91</a></li>
+<li class="page_item page-item-69846"><a href="./../2-90/index.html">2.90</a></li>
+<li class="page_item page-item-69845"><a href="./../2-83/index.html">2.83 LTS</a></li>
+<li class="page_item page-item-66324"><a href="./../2-82/index.html">2.82</a></li>
+<li class="page_item page-item-64812"><a href="./../2-81/index.html">2.81</a></li>
+<li class="page_item page-item-55942"><a href="./../2-80/index.html">2.80</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+
+<div class="w-100">
+			<article id="post-75072" class="post-75072 page type-page status-publish has-post-thumbnail hentry">
+			<div class="entry-content">
+
+<div class="wp-block-cover has-background-dim" style="background-color:#0e1610"><div class="wp-block-cover__inner-container">
+<div class="wp-block-group container"><div class="wp-block-group__inner-container">
+<p class="has-text-align-center container px-6 pt-5 has-white-color has-text-color has-medium-font-size">A completely new workflow for editing meshes, new physics simulation methods, faster Cycles rendering, better compositing with Eevee, and so much more. Blender 2.92 marks the beginning of something incredible.</p>
+
+
+
+<p class="has-text-align-center mb-6 has-text-color" style="color:#7c7c7c">Released February 25th, 2021</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube container mx-auto rounded wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Blender 2.92 New Features in LESS than 5 Minutes" width="500" height="281" src="https://www.youtube.com/embed/BnXQMxr5xg8?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+</div></div>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim-60 has-background-dim is-style-default pb-7" style="background-color:#0e1610;min-height:1000px">
+<video class="wp-block-cover__video-background" autoplay muted loop playsinline src="./../../../wp-content/uploads/2021/02/Blender_Geometry_Nodes_Mograph__spherical_falloff-chopped.mp4"></video><div class="wp-block-cover__inner-container">
+<div style="position: absolute; top: -1px; height: 450px; left: 0; right: 0; margin-bottom: 15rem; background-image: linear-gradient(#0e1610, transparent); z-index: -1">&nbsp;</div>
+
+
+
+<div id="paragraph-plus-block_5fb99dda1a8b0" class="wp-block-paragraph-plus container is-style-massive-title text-center py-4 mt-7 float-center">
+	<p><em>GEOMETRY</em> MEETS <em>NODES</em></p>
+
+	<style type="text/css">#paragraph-plus-block_5fb99dda1a8b0 {
+						color: #7bdcb5;			font-size: 72px;		}
+		#paragraph-plus-block_5fb99dda1a8b0 em {
+			background: #7bdcb5;			color: #000000;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center container rounded px-4 has-light-green-cyan-color has-black-background-color has-text-color has-background has-medium-font-size">The new Geometry Nodes editor opens the door for creating and manipulating meshes using a node-based system.</p>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container my-6">
+<div class="wp-block-column is-vertically-aligned-center">
+<h1 class="is-style-default has-light-green-cyan-color has-text-color">A NEW <strong>MODIFIER</strong>
+</h1>
+
+
+
+<p class="has-medium-font-size">Create your own custom modifier! Expose properties from the nodes in the modifier stack for an easy-to-use interface.</p>
+
+
+
+<p class="has-medium-font-size"><a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Geometry_Nodes" data-type="URL" data-id="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Geometry_Nodes" target="_blank" rel="noreferrer noopener">Read more</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-image size-large rounded m-0 p-0"><img loading="lazy" width="734" height="380" src="./../../../wp-content/uploads/2021/02/modifier_scatter.png?x18334" alt="Geometry Nodes" class="wp-image-75958" srcset="./../../../wp-content/uploads/2021/02/modifier_scatter.png 734w, ./../../../wp-content/uploads/2021/02/modifier_scatter-512x265.png 512w" sizes="(max-width: 734px) 100vw, 734px"><figcaption>New Geometry Nodes Modifier</figcaption></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container my-6">
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-image size-large rounded m-0 p-0"><img loading="lazy" width="720" height="405" src="./../../../wp-content/uploads/2021/01/pebble_scattering_small.jpg?x18334" alt="" class="wp-image-74910" srcset="./../../../wp-content/uploads/2021/01/pebble_scattering_small.jpg 720w, ./../../../wp-content/uploads/2021/01/pebble_scattering_small-512x288.jpg 512w, ./../../../wp-content/uploads/2021/01/pebble_scattering_small-480x270.jpg 480w" sizes="(max-width: 720px) 100vw, 720px"><figcaption>Pebbles Scattering using Geometry Nodes. <a href="./../../demo-files/index.html#geometry-nodes" target="_blank" rel="noreferrer noopener">Download sample file</a>!</figcaption></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<h1 class="is-style-default has-light-green-cyan-color has-text-color">POINT <strong>SCATTER</strong>
+</h1>
+
+
+
+<p class="has-medium-font-size">This first iteration focuses on object scattering and instancing, laying the groundwork for more advanced workflows in the upcoming releases.</p>
+
+
+
+<p class="has-medium-font-size"><a href="https://docs.blender.org/manual/en/2.92/modeling/geometry_nodes/point/point_distribute.html" data-type="URL" data-id="https://docs.blender.org/manual/en/2.92/modeling/geometry_nodes/point/point_distribute.html" target="_blank" rel="noreferrer noopener">Read more</a></p>
+</div>
+</div>
+
+
+<div id="cards-block_6035649476570" class="cards container py-6">
+
+	<div class="cards-list cards-3  mb-5">
+
+			<div class="cards-list-item-outer">
+				<div class="cards-list-item-inner" style="background-color: #161616;">
+
+																	<a href="https://docs.blender.org/manual/en/2.92/modeling/geometry_nodes/index.html" class="cards-list-item-thumbnail">
+							<img src="./../../../wp-content/uploads/2021/02/manual_geo_nodes.png?x18334">
+						</a>
+
+										<div class="cards-list-item-info">
+													<a class="cards-list-item-title" href="https://docs.blender.org/manual/en/2.92/modeling/geometry_nodes/index.html">Learn</a>
+
+													<span class="cards-list-item-excerpt" href="https://docs.blender.org/manual/en/2.92/modeling/geometry_nodes/index.html"><p>The user manual has been updated with a list of all the nodes, attributes, and more.</p>
+</span>
+											</div>
+									</div>
+			</div>
+
+			<div class="cards-list-item-outer">
+				<div class="cards-list-item-inner" style="background-color: #161616;">
+
+																	<a href="./../../demo-files/index.html#geometry-nodes" class="cards-list-item-thumbnail">
+							<img src="./../../../wp-content/uploads/2021/02/spherical_eye.jpg?x18334">
+						</a>
+
+										<div class="cards-list-item-info">
+													<a class="cards-list-item-title" href="./../../demo-files/index.html#geometry-nodes">Try It</a>
+
+													<span class="cards-list-item-excerpt" href="./download/demo-files/#geometry-nodes"><p>Learn by example with these files, look out for notes in the Geometry Nodes editor.</p>
+</span>
+											</div>
+									</div>
+			</div>
+
+			<div class="cards-list-item-outer">
+				<div class="cards-list-item-inner" style="background-color: #161616;">
+
+																	<a href="https://twitter.com/search?q=%23b3d%20AND%20%23geometrynodes" class="cards-list-item-thumbnail">
+							<img src="./../../../wp-content/uploads/2021/01/flower_scattering.jpg?x18334">
+						</a>
+
+										<div class="cards-list-item-info">
+													<a class="cards-list-item-title" href="https://twitter.com/search?q=%23b3d%20AND%20%23geometrynodes">#GeometryNodes</a>
+
+													<span class="cards-list-item-excerpt" href="https://twitter.com/search?q=%23b3d%20AND%20%23geometrynodes"><p>The community is already creating the impossible. Join the party!</p>
+</span>
+											</div>
+									</div>
+			</div>
+			</div>
+	<style type="text/css">#cards-block_6035649476570 {
+			background: ;
+			color: #7bdcb5;
+		}
+
+		.cards-list-item-excerpt {font-size: 1rem;}
+.cards-list-item-inner {transition: transform ease-in-out 150ms; }
+.cards-list-item-inner:hover {transform: scale(1.03); }</style>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-cover py-6" style="background-image:url(./../../../wp-content/uploads/2021/02/joanna-kobierska-mum.jpg);background-color:#3d4b57;min-height:800px"><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim py-6" style="background-color:#070707"><div class="wp-block-cover__inner-container">
+<div id="paragraph-plus-block_60343dbfc60e7" class="wp-block-paragraph-plus container is-style-massive-title pb-5 float-center">
+	<p style="text-align: center;"><em>SCULPT</em> GALORE</p>
+
+	<style type="text/css">#paragraph-plus-block_60343dbfc60e7 {
+						color: #ffff00;			font-size: 72px;		}
+		#paragraph-plus-block_60343dbfc60e7 em {
+			background: #ffff00;			color: #070707;			font-style: normal;		}</style>
+</div>
+
+
+<div id="tabs-block_6035b839c3d0d" class="tabs container rounded">
+
+	<div class="">
+		<ul class="nav nav-tabs mb-3 list-bullets-none justify-content-center" role="tablist">
+						<li class="nav-item">
+				<a class="nav-link py-2 active" id="t-oh-yeah-smear-it-0-tab" data-toggle="pill" href="#t-oh-yeah-smear-it-0" role="tab" aria-controls="t-oh-yeah-smear-it-0" aria-selected="true">
+					Oh Yeah Smear It				</a>
+			</li>
+						<li class="nav-item">
+				<a class="nav-link py-2 " id="t-pinch-it-1-tab" data-toggle="pill" href="#t-pinch-it-1" role="tab" aria-controls="t-pinch-it-1" aria-selected="false">
+					Pinch It				</a>
+			</li>
+						<li class="nav-item">
+				<a class="nav-link py-2 " id="t-beautiful-topology-2-tab" data-toggle="pill" href="#t-beautiful-topology-2" role="tab" aria-controls="t-beautiful-topology-2" aria-selected="false">
+					Beautiful Topology				</a>
+			</li>
+					</ul>
+		<div class="tab-content text-center">
+							<div class="tab-pane show active" id="t-oh-yeah-smear-it-0" role="tabpanel" aria-labelledby="t-oh-yeah-smear-it-0-tab">
+											<div class="embed-responsive embed-responsive-16by9 rounded">
+							<video class="embed-responsive-item" autoplay controls muted loop>
+								<source src="./../../../wp-content/uploads/2021/02/sculpt_multires_smear-chopped.mp4" type="video/mp4">
+							</video>
+						</div>
+																					<div class="py-3 px-5 mx-5 lead">Smear multires displacement over the limit surface similar to how smearing for colors and topology slide works.</div>
+									</div>
+							<div class="tab-pane " id="t-pinch-it-1" role="tabpanel" aria-labelledby="t-pinch-it-1-tab">
+											<div class="embed-responsive embed-responsive-16by9 rounded">
+							<video class="embed-responsive-item" autoplay controls muted loop>
+								<source src="./../../../wp-content/uploads/2021/02/sculpt_multires_topologo-chopped.mp4" type="video/mp4">
+							</video>
+						</div>
+																					<div class="py-3 px-5 mx-5 lead">Next level organic sculpting.</div>
+									</div>
+							<div class="tab-pane " id="t-beautiful-topology-2" role="tabpanel" aria-labelledby="t-beautiful-topology-2-tab">
+											<div class="embed-responsive embed-responsive-16by9 rounded">
+							<video class="embed-responsive-item" autoplay controls muted loop>
+								<source src="./../../../wp-content/uploads/2021/02/sculpt_multires_topologo-chopped-1.mp4" type="video/mp4">
+							</video>
+						</div>
+																					<div class="py-3 px-5 mx-5 lead">Smearing can be used multiple times over the same area without generating artifacts in the topology. In the video the Expand smear mode is used.</div>
+									</div>
+					</div>
+	</div>
+
+	<style type="text/css">#tabs-block_6035b839c3d0d {
+			color: #ffff00;
+		}
+		#tabs-block_6035b839c3d0d .embed-responsive-item,
+		#tabs-block_6035b839c3d0d img {
+			background: ;
+		}</style>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container my-6">
+<div class="wp-block-column is-vertically-aligned-center">
+<h1 class="is-style-default has-text-color" style="color:#ffff00">
+<strong>SILHOUETTE </strong>ANYTIME</h1>
+
+
+
+<p class="has-medium-font-size">Shape silhouettes as you please with this new option in the Grab tool.  </p>
+
+
+
+<p class="has-medium-font-size">When used on thin meshes, grabbing from one side of the object won&#8217;t affecting the shape on the other side.</p>
+
+
+
+<p class="has-medium-font-size"><a rel="noreferrer noopener" href="https://developer.blender.org/D9205" data-type="URL" data-id="https://developer.blender.org/D9205" target="_blank">Read more</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-video rounded p-0 m-0"><video autoplay loop muted src="./../../../wp-content/uploads/2021/02/sculpt_silhouette-chopped.mp4"></video></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container my-6">
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-video rounded p-0 m-0"><video autoplay loop muted src="./../../../wp-content/uploads/2021/02/sculpt_snake-chopped.mp4"></video></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<h1 class="is-style-default has-text-color" style="color:#ffff00">
+<strong>ELASTIC</strong> SNAKE</h1>
+
+
+
+<p class="has-medium-font-size">This mode deforms the mesh using a kelvinlet instead of applying<br>the displacement directly inside the brush radius, which is great for<br>stylized shapes sketching.  </p>
+
+
+
+<p class="has-medium-font-size"><a href="https://developer.blender.org/D9560" data-type="URL" target="_blank" rel="noreferrer noopener">Read more</a></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-group container mx-auto my-6 is-style-default"><div class="wp-block-group__inner-container">
+<h1 class="has-text-align-center is-style-default has-text-color" style="color:#ffff00">CHOP <strong>CHOP</strong>
+</h1>
+
+
+
+<p class="has-text-align-center m-0 py-3 container px-4 has-medium-font-size">Mesh Fairing allows you to visually remove parts of your mesh by completely smoothing the area inside a Face Set.</p>
+
+
+
+<figure class="wp-block-video rounded p-0 m-0"><video controls loop muted src="./../../../wp-content/uploads/2021/02/sculpt_fair-chopped.mp4"></video></figure>
+
+
+
+<p class="has-text-align-center mt-3 has-medium-font-size"><a href="https://developer.blender.org/D9603" data-type="URL" data-id="https://developer.blender.org/D9603" target="_blank" rel="noreferrer noopener">Read more</a></p>
+</div></div>
+
+
+
+<h1 class="has-text-align-center is-style-default has-text-color" style="color:#ffff00">MORE <strong>SCULPT </strong>GOODIES</h1>
+
+
+
+<div id="word-cloud-block_6035bbafc3d11" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="https://developer.blender.org/D9679" target="_blank" class="d-block px-3 py-2">
+					Allow inverting the Erase Displacement mesh filter				</a>
+					</li>
+			<li>
+							<a href="https://developer.blender.org/D8209" target="_blank" class="d-block px-3 py-2">
+					Paint Studio Light preset				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBea064133e53" target="_blank" class="d-block px-3 py-2">
+					Sculpt Session Stats				</a>
+					</li>
+			<li>
+							<a href="https://developer.blender.org/D8938" target="_blank" class="d-block px-3 py-2">
+					Face Set Edit delete Geometry operation				</a>
+					</li>
+			<li>
+							<a href="https://developer.blender.org/D9320" target="_blank" class="d-block px-3 py-2">
+					Plane Deformation Fall-off for Grab Tool				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_6035bbafc3d11 {
+			background: ;
+			color: #ffff00;
+		}</style>
+</div>
+
+
+
+<p class="has-text-align-center d-block has-text-color" style="color:#ffff00"><a class="btn btn-outline-light btn-outline-current" rel="noreferrer noopener" href="./../../demo-files/index.html#sculpting" data-type="URL" data-id="./download/demo-files/#sculpting" target="_blank">Download Sculpt Demo Files</a></p>
+</div></div>
+
+
+
+<div class="wp-block-group py-6 has-white-color has-vivid-purple-background-color has-text-color has-background"><div class="wp-block-group__inner-container">
+<div id="paragraph-plus-block_5f282103c4506" class="wp-block-paragraph-plus contain is-style-massive-title text-center float-center">
+	<p><em>CURVE</em> YOUR PENCIL</p>
+
+	<style type="text/css">#paragraph-plus-block_5f282103c4506 {
+									font-size: 72px;		}
+		#paragraph-plus-block_5f282103c4506 em {
+			background: #ffffff;			color: #9b51e0;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center pb-4 has-medium-font-size">Grease Pencil strokes can now be edited as curves!</p>
+
+
+
+<div class="wp-block-group is-style-box container mx-auto has-background" style="background-color:#8233cc"><div class="wp-block-group__inner-container">
+<figure class="wp-block-video rounded p-0 m-0"><video controls loop muted src="./../../../wp-content/uploads/2021/02/Curve_edit_mode_demo-chopped.mp4"></video></figure>
+
+
+
+<p class="has-text-align-center pt-3 has-medium-font-size">Edit strokes like Bézier curves. Learn more in <a href="https://docs.blender.org/manual/en/2.92/grease_pencil/modes/edit/curve_editing.html">the manual</a>.</p>
+</div></div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container mt-6 is-style-box has-white-color has-text-color has-background" style="background-color:#8233cc">
+<div class="wp-block-column is-vertically-aligned-center">
+<div id="paragraph-plus-block_6035ad7fc3d04" class="wp-block-paragraph-plus contain is-style-massive-title text-center float-center">
+	<p style="text-align: left;"><em>TRACE</em> MOTION</p>
+
+	<style type="text/css">#paragraph-plus-block_6035ad7fc3d04 {
+									font-size: 72px;		}
+		#paragraph-plus-block_6035ad7fc3d04 em {
+			background: #ffffff;			color: #8233cc;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-left mt-4 d-block has-medium-font-size">The <strong>Trace Image</strong> feature now supports image sequences!</p>
+
+
+
+<p class="mt-4 has-medium-font-size">Perfect for bringing your storyboards into 3D.</p>
+
+
+
+<p class="has-medium-font-size"><a rel="noreferrer noopener" href="https://docs.blender.org/manual/en/2.92/grease_pencil/modes/object/trace_image.html" data-type="URL" data-id="https://docs.blender.org/manual/en/2.92/grease_pencil/modes/object/trace_image.html" target="_blank">Reference manual</a></p>
+
+
+
+<p class="has-text-align-left pt-4"><em>Recommended read: <a rel="noreferrer noopener" href="./../../../user-stories/the-future-of-storyboarding-blender-for-pre-production/index.html" data-type="URL" data-id="./user-stories/the-future-of-storyboarding-blender-for-pre-production/" target="_blank">The Future Of Storyboarding: Blender For Pre-Production</a>.</em></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-video aligncenter rounded p-0 m-0"><video controls loop muted src="./../../../wp-content/uploads/2021/02/grease_pencil_trace_sequences.mp4"></video></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center container mt-6 is-style-box py-6 has-white-color has-text-color has-background" style="background-color:#8233cc">
+<div class="wp-block-column is-vertically-aligned-center">
+<figure class="wp-block-video aligncenter rounded p-0 m-0"><video controls loop muted src="./../../../wp-content/uploads/2021/02/gpencil_before_after_interpolation_method-chopped.mp4"></video></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<div id="paragraph-plus-block_6037bf2b60c8b" class="wp-block-paragraph-plus contain is-style-massive-title text-center mt-5 float-center">
+	<p style="text-align: left;"><em>SMOOOOTH</em></p>
+
+	<style type="text/css">#paragraph-plus-block_6037bf2b60c8b {
+									font-size: 72px;		}
+		#paragraph-plus-block_6037bf2b60c8b em {
+			background: #ffffff;			color: #8233cc;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-left mt-4 d-block has-medium-font-size">Grease Pencil interpolation has been improved to better deal with different sized strokes.</p>
+
+
+
+<p class="has-text-align-left mt-4 d-block mb-5 has-medium-font-size">Previously, the longer stroke would be cut off. With the new algorithm, the strokes are properly &#8220;stretched&#8221; to fit the extreme shapes exactly.</p>
+</div>
+</div>
+
+
+
+<h1 class="has-text-align-center is-style-default mt-6">EVEN MORE <strong>GREASE PENCIL</strong>
+</h1>
+
+
+
+<div id="word-cloud-block_5fbceceee19fa" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="http://developer.blender.org/rB21f201e25e70" target="_blank" class="d-block px-3 py-2">
+					Improved Join Operator				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB151e847b8709" target="_blank" class="d-block px-3 py-2">
+					Improved Method for Interpolation				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB2985a745bb01" target="_blank" class="d-block px-3 py-2">
+					Cutter Tool New Flat Caps 				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBe9607f45d85d" target="_blank" class="d-block px-3 py-2">
+					Auto-merge Strokes				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBc80594f57f1e" target="_blank" class="d-block px-3 py-2">
+					Rotate textures in Dots and Strokes in Texture modifier				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBc8a3d1a1fa65" target="_blank" class="d-block px-3 py-2">
+					Copy Effects with Ctrl+L				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB9081b80d15b3" target="_blank" class="d-block px-3 py-2">
+					Reset Vertex Color Data				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB657e34435174" target="_blank" class="d-block px-3 py-2">
+					Limit Bake Animation to Selected Frames				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBba740ad2abc6" target="_blank" class="d-block px-3 py-2">
+					Layer Onion Skin Enabled by Default				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB7bf0682aa98a" target="_blank" class="d-block px-3 py-2">
+					Interpolate Tools in Draw Mode				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_5fbceceee19fa {
+			background: ;
+			color: ;
+		}</style>
+</div>
+
+
+
+<p class="has-text-align-center d-block"><a class="btn btn-outline-light" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Grease_Pencil" data-type="URL" data-id="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Grease_Pencil" target="_blank" rel="noreferrer noopener">See all changes in Grease Pencil</a></p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim py-6" style="background-color:#003f73"><div class="wp-block-cover__inner-container">
+<div id="paragraph-plus-block_60343d28c60e6" class="wp-block-paragraph-plus container is-style-massive-title pl-3 float-center">
+	<p style="text-align: center;">BEYOND <em>PRIMITIVE</em></p>
+
+	<style type="text/css">#paragraph-plus-block_60343d28c60e6 {
+						color: #cfffb2;			font-size: 72px;		}
+		#paragraph-plus-block_60343d28c60e6 em {
+			background: #cfffb2;			color: #002b63;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center py-3 container has-text-color has-medium-font-size" style="color:#cfffb2">Create primitives interactively with just two clicks.</p>
+
+
+
+<div class="wp-block-group is-style-box container mb-5 has-background" style="background-color:#cfffb2"><div class="wp-block-group__inner-container">
+<figure class="wp-block-video rounded p-0 m-0"><video autoplay controls loop muted src="./../../../wp-content/uploads/2021/02/Add_object-chopped.mp4"></video></figure>
+</div></div>
+
+
+
+<p class="has-text-align-center d-block has-text-color" style="color:#cfffb2"><a class="btn btn-outline-light btn-outline-current" rel="noreferrer noopener" href="https://docs.blender.org/manual/en/2.92/editors/3dview/toolbar/add_cube.html#tool-add-cube" data-type="URL" data-id="https://docs.blender.org/manual/en/2.92/editors/3dview/toolbar/add_cube.html#tool-add-cube" target="_blank">Learn more about Add Primitive Tool</a></p>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-cover py-6" style="background-image:url(./../../../wp-content/uploads/2021/02/joanna-kobierska-kh.jpg);background-color:#3d4b57;min-height:800px"><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim-80 has-background-dim py-6" style="background-image:url(./../../../wp-content/uploads/2021/02/eevee_cryptomatte.png);background-color:#e8147e"><div class="wp-block-cover__inner-container">
+<div id="paragraph-plus-block_60345066dd5fe" class="wp-block-paragraph-plus container is-style-massive-title pl-3 float-center">
+	<p style="text-align: center;"><em>EEVOLVED ❤️</em></p>
+
+	<style type="text/css">#paragraph-plus-block_60345066dd5fe {
+									font-size: 72px;		}
+		#paragraph-plus-block_60345066dd5fe em {
+			background: #190000;			color: #e8147e;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center pb-4 container has-medium-font-size">Eevee and Cycles have never been closer!</p>
+
+
+<div id="cards-block_6035c8c04de4b" class="cards container">
+
+	<div class="cards-list cards-2  mb-5">
+
+			<div class="cards-list-item-outer">
+				<div class="cards-list-item-inner" style="background-color: #0a0a0a;">
+
+																	<a href="https://docs.blender.org/manual/en/2.92/compositing/types/matte/cryptomatte.html" class="cards-list-item-thumbnail">
+							<img src="./../../../wp-content/uploads/2021/02/eevee_cryptomatte.png?x18334">
+						</a>
+
+										<div class="cards-list-item-info">
+													<a class="cards-list-item-title" href="https://docs.blender.org/manual/en/2.92/compositing/types/matte/cryptomatte.html">CRYPTOMATTE</a>
+
+													<span class="cards-list-item-excerpt" href="https://docs.blender.org/manual/en/2.92/compositing/types/matte/cryptomatte.html"><p>The Cryptomatte standard is now in Eevee! To efficiently create mattes for compositing. The settings are shared between Eevee and Cycles.</p>
+</span>
+											</div>
+									</div>
+			</div>
+
+			<div class="cards-list-item-outer">
+				<div class="cards-list-item-inner" style="background-color: #0a0a0a;">
+
+																	<a href="https://docs.blender.org/manual/en/2.92/render/layers/passes.html#shader-aov" class="cards-list-item-thumbnail">
+							<img src="./../../../wp-content/uploads/2021/02/eevee_aov.png?x18334">
+						</a>
+
+										<div class="cards-list-item-info">
+													<a class="cards-list-item-title" href="https://docs.blender.org/manual/en/2.92/render/layers/passes.html#shader-aov">SHADER AOV</a>
+
+													<span class="cards-list-item-excerpt" href="https://docs.blender.org/manual/en/2.92/render/layers/passes.html#shader-aov"><p>Arbitrary Output Variables are essential for compositing, now also available when rendering in Eevee! Shader AOV settings are also shared with Cycles.</p>
+</span>
+											</div>
+									</div>
+			</div>
+			</div>
+	<style type="text/css">#cards-block_6035c8c04de4b {
+			background: ;
+			color: #e8147e;
+		}
+
+		.cards-list-item-excerpt {font-size: 1rem;}
+.cards-list-item-inner {transition: transform ease-in-out 150ms; }
+.cards-list-item-inner:hover {transform: scale(1.03); }</style>
+</div>
+
+
+
+<p class="has-text-align-center d-block mt-4"><a class="btn btn-outline-light" rel="noreferrer noopener" href="./../../demo-files/index.html#eevee" data-type="URL" data-id="./download/demo-files/#eevee" target="_blank">Have Fun with Eevee Demo Files!</a></p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim-60 has-background-dim" style="background-color:#00163d">
+<video class="wp-block-cover__video-background" autoplay muted loop playsinline src="./../../../wp-content/uploads/2021/02/explosions_slowmo_crossmind_02.mp4"></video><div class="wp-block-cover__inner-container">
+<div class="wp-block-columns are-vertically-aligned-center container mx-auto py-7">
+<div class="wp-block-column is-vertically-aligned-center">
+<div class="wp-block-image rounded"><figure class="alignright size-large"><img loading="lazy" width="167" height="127" src="./../../../wp-content/uploads/2016/03/277_OpenVDB_Logo.png?x18334" alt="" class="wp-image-30448"></figure></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
+<div id="paragraph-plus-block_5f281cfec44f3" class="wp-block-paragraph-plus contain is-style-massive-title pl-3 float-center">
+	<p>SPEAK <em>VOLUMES</em></p>
+
+	<style type="text/css">#paragraph-plus-block_5f281cfec44f3 {
+						color: #d8271c;			font-size: 48px;		}
+		#paragraph-plus-block_5f281cfec44f3 em {
+			background: #d8271c;			color: #00163d;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="pl-3 pt-3 has-medium-font-size">Volume rendering is significantly more memory efficient, by using a sparse NanoVDB grid. <a rel="noreferrer noopener" href="https://developer.blender.org/D8794" target="_blank">Read more</a>.</p>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-cover has-background-dim-30 has-background-dim py-6" style="background-image:url(./../../../wp-content/uploads/2020/06/nv_bg.jpg);background-color:#76b900"><div class="wp-block-cover__inner-container">
+<div class="wp-block-columns container">
+<div class="wp-block-column">
+<div id="paragraph-plus-block_5f27ed05c44e7" class="wp-block-paragraph-plus contain is-style-massive-title">
+	<p>RENDER <em>ANYTHING</em></p>
+
+	<style type="text/css">#paragraph-plus-block_5f27ed05c44e7 {
+									font-size: 72px;		}
+		#paragraph-plus-block_5f27ed05c44e7 em {
+			background: #ffffff;			color: #6aa300;			font-style: normal;		}</style>
+</div>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-full m-2"><a href="https://developer.nvidia.com/optix" target="_blank"><img loading="lazy" width="675" height="224" src="./../../../wp-content/uploads/2019/11/NVIDIA_RTX_itson-e1578907023773.png?x18334" alt="NVIDIA RTX It's On" class="wp-image-67431" title="NVIDIA RTX It's On" srcset="./../../../wp-content/uploads/2019/11/NVIDIA_RTX_itson-e1578907023773.png 675w, ./../../../wp-content/uploads/2019/11/NVIDIA_RTX_itson-e1578907023773-512x170.png 512w" sizes="(max-width: 675px) 100vw, 675px"></a></figure>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center has-medium-font-size"><strong>OptiX</strong> now supports<strong> hybrid rendering</strong> to combine the power of your CPU and GPU devices.</p>
+
+
+
+<p class="has-text-align-center has-medium-font-size"><strong>Ambient Occlusion</strong> and <strong>Bevel </strong>shaders are now supported while using OptiX!</p>
+
+
+
+<p class="has-text-align-center is-style-default">* Make sure to use the latest drivers (450 or newer) to make use of all the features and optimizations.</p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-vivid-red-background-color has-background-dim py-6"><div class="wp-block-cover__inner-container">
+<div id="paragraph-plus-block_6035d7294de50" class="wp-block-paragraph-plus container is-style-massive-title float-center">
+	<p style="text-align: center;">MAKE A  <em>SPLASH</em></p>
+
+	<style type="text/css">#paragraph-plus-block_6035d7294de50 {
+						color: #000000;			font-size: 72px;		}
+		#paragraph-plus-block_6035d7294de50 em {
+			background: #070707;			color: #cf2e2e;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center py-3 container mb-3 has-black-color has-text-color has-medium-font-size">Blender 2.92 introduces APIC, a new method for simulations.</p>
+
+
+
+<div class="wp-block-group is-style-box p-0 mt-0 mb-6 container has-black-background-color has-background"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns are-vertically-aligned-top container p-0 m-0 has-black-background-color has-background">
+<div class="wp-block-column is-vertically-aligned-top">
+<div id="paragraph-plus-block_60343dd5c60e8" class="wp-block-paragraph-plus container is-style-massive-title pl-3 float-center">
+	<p style="text-align: center;"><em>FLIP</em></p>
+
+	<style type="text/css">#paragraph-plus-block_60343dd5c60e8 {
+									font-size: 36px;		}
+		#paragraph-plus-block_60343dd5c60e8 em {
+			background: #cf2e2e;			color: #000000;			font-style: normal;		}</style>
+</div>
+
+
+
+<figure class="wp-block-video p-0 m-0 rounded"><video autoplay controls loop muted src="./../../../wp-content/uploads/2021/02/FLIP_Mantaflow-chopped.mp4"></video></figure>
+
+
+
+<p class="has-text-align-center m-0 py-3 container px-4 has-medium-font-size">FLIP produces a very splashy simulation with lots of particles dispersed in the air.</p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-top">
+<div id="paragraph-plus-block_6035d6ee4de4f" class="wp-block-paragraph-plus container is-style-massive-title pl-3 float-center">
+	<p style="text-align: center;"><em>APIC</em></p>
+
+	<style type="text/css">#paragraph-plus-block_6035d6ee4de4f {
+									font-size: 36px;		}
+		#paragraph-plus-block_6035d6ee4de4f em {
+			background: #cf2e2e;			color: #000000;			font-style: normal;		}</style>
+</div>
+
+
+
+<figure class="wp-block-video p-0 m-0 rounded"><video autoplay controls loop muted src="./../../../wp-content/uploads/2021/02/APIC_Mantaflow-chopped.mp4"></video></figure>
+
+
+
+<p class="has-text-align-center m-0 py-3 container px-4 has-medium-font-size">APIC produces a very energetic but also more stable simulation. Vortices within the liquid will be preserved better than with&nbsp;FLIP.</p>
+</div>
+</div>
+</div></div>
+
+
+
+<h1 class="has-text-align-center is-style-default has-black-color has-text-color">EVEN MORE <strong>PHYSICS</strong>
+</h1>
+
+
+
+<div id="word-cloud-block_6035da5b4de51" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="https://docs.blender.org/manual/en/2.92/physics/fluid/type/domain/liquid/viscosity.html?highlight=viscosity" target="_blank" class="d-block px-3 py-2">
+					New Viscosity Method				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBe09d0c0d077c" target="_blank" class="d-block px-3 py-2">
+					Improved particle sampling				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBe09d0c0d077c" target="_blank" class="d-block px-3 py-2">
+					Faster Playback and Smaller Cache Sizes				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBe44e0e4e7" target="_blank" class="d-block px-3 py-2">
+					Cloth now supports excluding faces from object collision using a vertex group				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBac290bfbe" target="_blank" class="d-block px-3 py-2">
+					Disable colliders without removing the modifier				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_6035da5b4de51 {
+			background: ;
+			color: #000000;
+		}</style>
+</div>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-cover py-6" style="background-image:url(./../../../wp-content/uploads/2021/02/joanna-kobierska-new10x.jpg);background-color:#3d4b57;min-height:800px;background-position:50% 33%"><div class="wp-block-cover__inner-container">
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+
+
+
+<div class="wp-block-group py-6 text-center has-light-green-cyan-color has-text-color has-background" style="background-color:#2e2e2e"><div class="wp-block-group__inner-container">
+<div id="paragraph-plus-block_60344040c60eb" class="wp-block-paragraph-plus contain is-style-massive-title text-center float-center">
+	<p><em>EXPOSÉ</em></p>
+
+	<style type="text/css">#paragraph-plus-block_60344040c60eb {
+									font-size: 72px;		}
+		#paragraph-plus-block_60344040c60eb em {
+			background: #7bdcb5;			color: #232323;			font-style: normal;		}</style>
+</div>
+
+
+
+<p class="has-text-align-center pb-3 has-medium-font-size">See everything with the new Exposure node in the Compositor.</p>
+
+
+
+<div class="wp-block-group container mx-auto"><div class="wp-block-group__inner-container">
+<figure class="wp-block-video rounded p-0 m-0 container"><video controls loop muted src="./../../../wp-content/uploads/2021/02/compositor_exposure-chopped.mp4"></video></figure>
+
+
+
+<p class="has-text-align-center m-0 py-3 container px-4 has-medium-font-size">On the left side the result of the exposure node, on the right the raw image.</p>
+</div></div>
+
+
+
+<div id="word-cloud-block_6035e4354de5b" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/More_Features#Compositor" target="_blank" class="d-block px-3 py-2">
+					Better Premultiplication in Keying Node				</a>
+					</li>
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Animation-Rigging#Custom_Object_Space_for_Constraints" target="_blank" class="d-block px-3 py-2">
+					New Save as Render option in File Output node				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_6035e4354de5b {
+			background: ;
+			color: #7bdcb5;
+		}</style>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-cover has-light-green-cyan-background-color has-background-dim py-6"><div class="wp-block-cover__inner-container">
+<div id="paragraph-plus-block_60343e1bc60e9" class="wp-block-paragraph-plus container is-style-massive-title pl-3 float-center">
+	<p style="text-align: center;"><em>ANIMATION</em></p>
+
+	<style type="text/css">#paragraph-plus-block_60343e1bc60e9 {
+						color: #111600;			font-size: 72px;		}
+		#paragraph-plus-block_60343e1bc60e9 em {
+			background: #9b51e0;			color: #7bdcb5;			font-style: normal;		}</style>
+</div>
+
+
+
+<div id="word-cloud-block_6035ddfe4de55" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Animation-Rigging#Euler_Filter" target="_blank" class="d-block px-3 py-2">
+					Better Euler Discontinuity Filter				</a>
+					</li>
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Animation-Rigging#Custom_Object_Space_for_Constraints" target="_blank" class="d-block px-3 py-2">
+					Custom Object Space for Constraints				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB60746363875a67ae15278d8e4629f898d9562c47" target="_blank" class="d-block px-3 py-2">
+					New NLA strips will have Sync Length enabled				</a>
+					</li>
+			<li>
+							<a href="https://developer.blender.org/D10003" target="_blank" class="d-block px-3 py-2">
+					Improvements on B-Bone Preserve Volume				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB30dd31a7b3d8" target="_blank" class="d-block px-3 py-2">
+					FCurves with Modifiers are now drawn anchored to the NLA strip				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB58dae919e5" target="_blank" class="d-block px-3 py-2">
+					Weight Painting Auto-Normalize Improvements				</a>
+					</li>
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Animation-Rigging#Bake_Action" target="_blank" class="d-block px-3 py-2">
+					Bake Action Optional Cleanup				</a>
+					</li>
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/Animation-Rigging#User_Interface" target="_blank" class="d-block px-3 py-2">
+					User Interface Improvements				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_6035ddfe4de55 {
+			background: ;
+			color: #9b51e0;
+		}</style>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group py-5 text-center has-cyan-bluish-gray-color has-black-background-color has-text-color has-background"><div class="wp-block-group__inner-container">
+<div class="wp-block-group container"><div class="wp-block-group__inner-container">
+<div id="paragraph-plus-block_5fbc6f37ce0f5" class="wp-block-paragraph-plus contain is-style-massive-title text-center mt-6 float-center">
+	<p>BUT WAIT, THERE&#8217;S <em>MORE</em></p>
+
+	<style type="text/css">#paragraph-plus-block_5fbc6f37ce0f5 {
+						color: #ffffff;			font-size: 36px;		}
+		#paragraph-plus-block_5fbc6f37ce0f5 em {
+			background: #ffffff;			color: #000000;			font-style: normal;		}</style>
+</div>
+
+
+
+<div id="word-cloud-block_5fbc64e1cd631" class="lead p-5 word-cloud container mx-auto">
+	<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+			<li>
+							<a href="http://developer.blender.org/rB5d130826221" target="_blank" class="d-block px-3 py-2">
+					Huge speedup of tracking multiple tracks				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBe1665c3d31" target="_blank" class="d-block px-3 py-2">
+					VSE Media transform redesign				</a>
+					</li>
+			<li>
+							<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92/IO" target="_blank" class="d-block px-3 py-2">
+					Simulation Cache Library Overrides				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBfbf29086745f" target="_blank" class="d-block px-3 py-2">
+					Filter Selectable Objects in Outliner				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBbb49aa0" target="_blank" class="d-block px-3 py-2">
+					Cycles Multithreaded Export				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB235c309e5f86" target="_blank" class="d-block px-3 py-2">
+					Background rectangle option for VSE text strip				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB79eeabafb39f" target="_blank" class="d-block px-3 py-2">
+					Improved About and Startup Script Execution dialogs				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBc0bd240ad0a1" target="_blank" class="d-block px-3 py-2">
+					Library Overrides support NLA				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBf762d37790b55352adc22a1d4c9e2b4953f0eac9" target="_blank" class="d-block px-3 py-2">
+					Intel Iris and Xe GPUs OpenCL support				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB0e47e57eb77d" target="_blank" class="d-block px-3 py-2">
+					Syncronize Outliner with Properties Editor				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBaa64fd69e733" target="_blank" class="d-block px-3 py-2">
+					List Library Overrides in Outliner				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rBf7223d5f722ac4" target="_blank" class="d-block px-3 py-2">
+					Theme alternate rows color in Video Sequencer				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB328aad8c98c931c3" target="_blank" class="d-block px-3 py-2">
+					Constrain Panels Vertically while dragging				</a>
+					</li>
+			<li>
+							<a href="http://developer.blender.org/rB1d3b92bdeabc" target="_blank" class="d-block px-3 py-2">
+					Improved Node Groups sockets list				</a>
+					</li>
+		</ul>
+	<style type="text/css">#word-cloud-block_5fbc64e1cd631 {
+			background: #000000;
+			color: #abb8c3;
+		}</style>
+</div>
+
+
+
+<p class="has-text-align-center py-6 has-white-color has-text-color has-medium-font-size">Read the full list of changes at <a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.92" data-type="URL" target="_blank" rel="noreferrer noopener">wiki.blender.org</a></p>
+
+
+
+<h1>Credits</h1>
+
+
+
+<p class="has-normal-font-size"><a href="./../../../about/credits/index.html">List of developers</a> that contributed to Blender 2.92</p>
+
+
+
+<p class="container px-6 has-normal-font-size"><a rel="noreferrer noopener" href="https://cloud.blender.org/p/gallery/60337d495677e942564cce76" data-type="URL" target="_blank">Blender 2.92 splash</a> and interline images by <a rel="noreferrer noopener" href="https://www.artstation.com/joanna_kobierska" target="_blank" data-type="URL" data-id="https://www.artstation.com/joanna_kobierska">Joanna Kobierska</a>. Geometry Nodes demo by <a rel="noreferrer noopener" href="https://www.youtube.com/channel/UCpdGdXzKqCdOjrMR084sMRA" target="_blank" data-type="URL" data-id="https://www.youtube.com/channel/UCpdGdXzKqCdOjrMR084sMRA">James Redmond</a>. Volumes demo by <a href="https://www.youtube.com/crossmindstudio" data-type="URL" data-id="https://www.youtube.com/crossmindstudio" target="_blank" rel="noreferrer noopener">CrossMind Studio</a>. Exposure by&nbsp;<a href="http://www.monorender.com/">Carlo Bergonzini</a>.</p>
+
+
+
+<p class="container px-6 has-normal-font-size">Additional help by Francesco Siddi, Dalai Felinto, Christian Bunyan and the Blender Studio team. Features video by <a rel="noreferrer noopener" href="https://www.youtube.com/channel/UCOWrbryuVEPUMSSgayuLURg" target="_blank">SouthernShotty</a>. Page design and layout by <a rel="noreferrer noopener" href="https://www.instagram.com/pablovazquez.art/" target="_blank">Pablo Vazquez</a>.<br><br>Huge thanks to everyone involved ♥</p>
+</div></div>
+
+
+
+<div class="wp-block-group is-style-box text-center container my-5"><div class="wp-block-group__inner-container">
+<p class="has-text-align-center has-black-color has-text-color" style="font-size:31px">Blender is and will always remain free, <strong>forever</strong>.</p>
+
+
+
+<p class="has-text-align-center has-text-color has-medium-font-size" style="color:#505050"> Releases are possible thanks to the members of the Development Fund.</p>
+
+
+
+<p class="has-text-align-center has-text-color has-medium-font-size" style="color:#505050">Join today and help to ensure the future of Blender for $6/month</p>
+
+
+
+<p class="has-text-align-center btn btn-outline-primary mx-auto px-5 my-4 text-decoration-none has-medium-font-size"><i class="fa fa-heart danger pr-3"></i><a style="text-decoration: none;" href="https://fund.blender.org/" target="_blank" rel="noreferrer noopener">Join the Blender Development Fund</a></p>
+</div></div>
+
+
+
+<p></p>
+</div></div>
+			</div>
+		</article>
+	</div>
+
+		</div> <!-- main container -->
+
+		<div class="footer-navigation pt-5"><div class="container"><div class="row">
+<div class="col-6 col-md-2">
+<a href="./../../index.html" class="sitemap-title pb-2">Blender</a><ul>
+<li><a href="./../../index.html" title="Download Blender">Download</a></li>
+<li><a href="./../../../features/index.html" title="Blender Features">Features</a></li>
+<li><a href="https://developer.blender.org/diffusion/B/" title="Source Code">Source</a></li>
+<li><a href="./../../../about/license/index.html" title="License">License</a></li>
+<li><a href="./../../../about/logo/index.html" title="Logo & Trademark">Logo & Trademark</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../foundation/index.html" class="sitemap-title pb-2">Organization</a><ul>
+<li><a href="./../../../foundation/index.html" title="Blender Foundation">Foundation</a></li>
+<li><a href="./../../../institute/index.html" title="Blender Institute">Institute</a></li>
+<li><a href="https://blender.studio/" title="Blender Studio">Studio</a></li>
+<li><a href="https://www.blendernetwork.org/" title="The Network of Blender Professionals">Blender Network</a></li>
+<li><a href="./../../../conference/index.html" title="Conference">Blender Conference</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../get-involved/index.html" class="sitemap-title pb-2">Get Involved</a><ul>
+<li><a href="./../../../foundation/donation-payment/index.html" title="Donate">Donate</a></li>
+<li><a href="./../../../get-involved/developers/index.html" title="Development">Development</a></li>
+<li><a href="./../../../get-involved/documenters/index.html" title="Documentation">Documentation</a></li>
+<li><a href="./../../../get-involved/index.html" title="Education">Education</a></li>
+<li><a href="./../../../certification/index.html" title="Certification">Certification</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../community/index.html" class="sitemap-title pb-2">Support</a><ul>
+<li><a href="./../../../community/index.html" title="Community">Community</a></li>
+<li><a href="https://docs.blender.org/manual/en/dev/" title="Manual">Manual</a></li>
+<li><a href="./../../../support/tutorials/index.html" title="Tutorials">Tutorials</a></li>
+<li><a href="https://docs.blender.org/api/current/" title="Python API">Python API</a></li>
+<li><a href="https://devtalk.blender.org/" title="Developers Forum">Developers Forum</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../about/website/index.html" class="sitemap-title pb-2">blender.org</a><ul>
+<li><a href="./../../../news/index.html" title="News">News</a></li>
+<li><a href="./../../../jobs/index.html" title="Jobs">Jobs</a></li>
+<li><a href="./../../../about/website/index.html" title="Website">Website</a></li>
+<li><a href="https://opendata.blender.org/" title="Open Data">Open Data</a></li>
+<li><a href="https://fund.blender.org/" title="Contact">Development Fund</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="https://twitter.com/blender_org" class="sitemap-title pb-2">Follow Blender</a><div class="social-icons">
+<a href="https://youtube.com/BlenderFoundation" title="Blender's Official YouTube channel" target="_blank" class="social-icons__youtube"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></i></a><a href="https://twitter.com/blender" title="Follow Blender on Twitter" target="_blank" class="social-icons__twitter"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></i></a><a href="https://instagram.com/blender.official/" title="Follow Blender on Instagram" target="_blank" class="social-icons__instagram"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M256,49.471c67.266,0,75.233.257,101.8,1.469,24.562,1.121,37.9,5.224,46.778,8.674a78.052,78.052,0,0,1,28.966,18.845,78.052,78.052,0,0,1,18.845,28.966c3.45,8.877,7.554,22.216,8.674,46.778,1.212,26.565,1.469,34.532,1.469,101.8s-0.257,75.233-1.469,101.8c-1.121,24.562-5.225,37.9-8.674,46.778a83.427,83.427,0,0,1-47.811,47.811c-8.877,3.45-22.216,7.554-46.778,8.674-26.56,1.212-34.527,1.469-101.8,1.469s-75.237-.257-101.8-1.469c-24.562-1.121-37.9-5.225-46.778-8.674a78.051,78.051,0,0,1-28.966-18.845,78.053,78.053,0,0,1-18.845-28.966c-3.45-8.877-7.554-22.216-8.674-46.778-1.212-26.564-1.469-34.532-1.469-101.8s0.257-75.233,1.469-101.8c1.121-24.562,5.224-37.9,8.674-46.778A78.052,78.052,0,0,1,78.458,78.458a78.053,78.053,0,0,1,28.966-18.845c8.877-3.45,22.216-7.554,46.778-8.674,26.565-1.212,34.532-1.469,101.8-1.469m0-45.391c-68.418,0-77,.29-103.866,1.516-26.815,1.224-45.127,5.482-61.151,11.71a123.488,123.488,0,0,0-44.62,29.057A123.488,123.488,0,0,0,17.3,90.982C11.077,107.007,6.819,125.319,5.6,152.134,4.369,179,4.079,187.582,4.079,256S4.369,333,5.6,359.866c1.224,26.815,5.482,45.127,11.71,61.151a123.489,123.489,0,0,0,29.057,44.62,123.486,123.486,0,0,0,44.62,29.057c16.025,6.228,34.337,10.486,61.151,11.71,26.87,1.226,35.449,1.516,103.866,1.516s77-.29,103.866-1.516c26.815-1.224,45.127-5.482,61.151-11.71a128.817,128.817,0,0,0,73.677-73.677c6.228-16.025,10.486-34.337,11.71-61.151,1.226-26.87,1.516-35.449,1.516-103.866s-0.29-77-1.516-103.866c-1.224-26.815-5.482-45.127-11.71-61.151a123.486,123.486,0,0,0-29.057-44.62A123.487,123.487,0,0,0,421.018,17.3C404.993,11.077,386.681,6.819,359.866,5.6,333,4.369,324.418,4.079,256,4.079h0Z"></path><path d="M256,126.635A129.365,129.365,0,1,0,385.365,256,129.365,129.365,0,0,0,256,126.635Zm0,213.338A83.973,83.973,0,1,1,339.974,256,83.974,83.974,0,0,1,256,339.973Z"></path><circle cx="390.476" cy="121.524" r="30.23"></circle></svg></i></a><a href="https://www.facebook.com/YourOwn3DSoftware/" title="Follow Blender on Facebook" target="_blank" class="social-icons__facebook"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg></i></a><a href="https://www.linkedin.com/company/blender-org/" title="Follow Blender on LinkdIn" target="_blank" class="social-icons__linkedin"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></i></a>
+</div>
+<hr class="mb-0">
+<a href="https://code.blender.org/" class="sitemap-title mt-0 py-2">Development News</a><div class="social-icons">
+<a href="https://youtube.com/BlenderDevelopers" title="Official YouTube channel for Blender development news" target="_blank" class="social-icons__youtube"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></i></a><a href="https://twitter.com/BlenderDev" title="Follow Blender Developers on Twitter" target="_blank" class="social-icons__twitter"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></i></a>
+</div>
+</div>
+</div></div></div>
+<footer class="footer-note">Artistic freedom starts with Blender<i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg></i><span>The Free and Open Source 3D Creation Suite</span><div id="hop" title="Be awesome in space"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></div>
+<script>var hop = document.getElementById("hop");
+hop.onclick = function(e){ window.scrollTo(0, 0);}
+window.addEventListener("scroll", function(){if(window.pageYOffset > 250){document.body.classList.add("is-scrolled")}else{document.body.classList.remove("is-scrolled")}});</script></footer>	<script src="./../../../wp-content/themes/bthree/assets/js/generated/tutti.min.js?x18334"></script>
+
+	<script type="text/javascript" src="./../../../wp-includes/js/wp-embed.min.js?x18334" id="wp-embed-js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-1418081-1', 'blender.org');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+</script>
+
+	<style type="text/css">.page {
+  padding-top: 0 !important;
+}
+
+.btn-outline-current { border-color: currentColor; }</style>	</body>
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 0/326 objects using memcache
+Page Caching using memcache
+Database Caching using memcache
+
+Served from: blender.org @ 2021-03-16 01:35:15 by W3 Total Cache
+-->
+</html>

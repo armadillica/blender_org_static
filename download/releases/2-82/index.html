@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<title>  2.82 &mdash; blender.org</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Home of the Blender project - Free and Open 3D Creation Software">
+
+								<meta name="keywords" content="eevee, cycles, ai, denoise, rtx, nvidia, grease pencil, release, official, dedouze, 2.82">
+
+		<meta name="author" content="Blender Foundation">
+		<meta name="theme-color" content="#ed8f31">
+		<meta property="og:site_name" content="blender.org">
+		<meta property="og:title" content="  2.82 &mdash; blender.org">
+		<meta property="og:description" content="Home of the Blender project - Free and Open 3D Creation Software">
+		<meta property="og:url" content="./download/releases/2-82/">
+		<meta property="og:image" content="./wp-content/uploads/2020/02/blender_282_pr.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@blender_org">
+		<meta name="twitter:title" content="  2.82 &mdash; blender.org">
+		<meta name="twitter:description" content="Home of the Blender project - Free and Open 3D Creation Software">
+		<meta name="twitter:image" content="./wp-content/uploads/2020/02/blender_282_pr.png">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="./../../../wp-content/themes/bthree/assets/images/favicon.ico?x18334">
+		<link rel="stylesheet" href="./../../../wp-content/themes/bthree/style.css?x18334" type="text/css" media="screen">
+
+		<link rel="dns-prefetch" href="./../../../">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./../../../wp-includes/css/dist/block-library/style.min.css?x18334" type="text/css" media="all">
+<link rel="stylesheet" id="wp-show-posts-css" href="./../../../wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?x18334" type="text/css" media="all">
+<link rel="https://api.w.org/" href="./../../../wp-json/index.html">
+<link rel="alternate" type="application/json" href="./../../../wp-json/wp/v2/pages/66324/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.6.2">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./../../../index.html?p=66324">
+<link rel="alternate" type="application/json+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2Fdownload%2Freleases%2F2-82%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2Fdownload%2Freleases%2F2-82%2F&#038;format=xml">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+
+	<body class="ps-2-82">
+		<div id="isolated"></div>
+		<div class="container-main">
+
+
+		<nav class="navbar navbar-expand-md navbar-primary fixed-top" role="navigation">
+			<div class="container">
+				<a class="navbar-brand navbar-logo-blender" href="./../../../index.html" title="Go to blender.org"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-menu">
+					<ul class="navbar-nav ml-auto">
+						<li id="menu-item-58172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58172"><a href="./../../../features/index.html" class="nav-link">Features</a></li>
+<li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-125"><a title="Download" href="./../../index.html" class="nav-link">Download</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="./../../../support/index.html" class="nav-link">Support</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="./../../../get-involved/index.html" class="nav-link">Get Involved</a></li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./../../../about/index.html" class="nav-link">About</a></li>
+<li id="menu-item-71848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71848"><a href="./../../../jobs/index.html" class="nav-link">Jobs</a></li>
+<li id="menu-item-1972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1972"><a href="http://store.blender.org/" class="nav-link">Store</a></li>
+<li id="menu-item-30672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30672"><a title="Join the Development Fund" href="https://fund.blender.org/" class="nav-link"><i class="fa fa-heart"></i> Donate</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+
+
+<div class="featured large" style="background-image: url(./../../../wp-content/uploads/2020/02/dedouze-tramstation-splashscreen.jpg); ">
+
+
+	<div class="container justify-content-center text-center">
+		<div class="featured-content align-self-center">
+			<h1 class="mx-4 display-3">
+				<strong>Power Your Pipeline</strong>			</h1>
+
+
+							<div class="page-header-main-ctas px-3 justify-content-center">
+											<div class="page-header-main-cta">
+							<a href="./../../index.html" class="cta-primary">
+								Download Blender 2.82							</a>
+						</div>
+														</div>
+					</div>
+	</div>
+
+
+
+			<div id="featured-overlay-video" class="featured-overlay-video" style="background-image: url(./../../../wp-content/uploads/2020/02/dedouze-tramstation-splashscreen.jpg); ">
+			<div id="bgvideo"></div>
+		</div>
+
+	<div style="background-image: none; background-color: #0a0000;opacity: 0.0;" class="featured-overlay"></div>
+</div>
+
+			<nav class="navbar navbar-secondary" role="navigation">
+				<div class="container">
+					<ul class="navbar-nav  mx-auto">
+													<li class="nav-item px-0">
+								<a class="nav-link text-center text-muted" href="./../../index.html">
+									Download								</a>
+							</li>
+							<li class="nav-item text-center" style="pointer-events: none">
+								<a class="pr-0" style="padding: 0 !important;" href="./../../index.html"><i class="fa fa-angle-right" style="padding: 0 !important;"></i></a>
+							</li>
+												<li class="page_item page-item-70621"><a href="./../../lts/index.html">Long-term Support</a></li>
+<li class="page_item page-item-3459 page_item_has_children current_page_ancestor current_page_parent"><a href="./../index.html">Release Notes</a></li>
+<li class="page_item page-item-157"><a href="./../../requirements/index.html">Requirements</a></li>
+<li class="page_item page-item-24170"><a href="./../../demo-files/index.html">Demo Files</a></li>
+<li class="page_item page-item-112"><a href="./../../previous-versions/index.html">Previous Versions</a></li>
+					</ul>
+				</div>
+			</nav>
+					<nav class="navbar navbar-secondary" role="navigation">
+				<div class="container">
+					<ul class="navbar-nav  mx-auto">
+												<li class="page_item page-item-75072"><a href="./../2-92/index.html">2.92</a></li>
+<li class="page_item page-item-73822"><a href="./../2-91/index.html">2.91</a></li>
+<li class="page_item page-item-69846"><a href="./../2-90/index.html">2.90</a></li>
+<li class="page_item page-item-69845"><a href="./../2-83/index.html">2.83 LTS</a></li>
+<li class="page_item page-item-66324 current_page_item"><a href="./index.html" aria-current="page">2.82</a></li>
+<li class="page_item page-item-64812"><a href="./../2-81/index.html">2.81</a></li>
+<li class="page_item page-item-55942"><a href="./../2-80/index.html">2.80</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+<script type="text/javascript">
+	/* YT Video Background. Modified from https://codepen.io/ccrch/pen/GgPLVW */
+	var videoId = "UHGJv0_rxeo";
+	var tag = document.createElement('script');
+			tag.src = 'https://www.youtube.com/player_api';
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	var bgvideo,
+			playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, loop: true, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
+	var vid = {'videoId': videoId, 'startSeconds': 0, 'endSeconds': 41, 'suggestedQuality': 'hd720'};
+
+	function onYouTubePlayerAPIReady(){
+	  bgvideo = new YT.Player('bgvideo', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange, 'onError': onPlayerError}, playerVars: playerDefaults});
+	}
+
+	function onPlayerReady(){
+	  bgvideo.loadVideoById(vid);
+	  bgvideo.mute();
+	}
+
+	function onPlayerStateChange(e) {
+	  if(e.data === YT.PlayerState.ENDED){
+	  	bgvideo.seekTo(vid.startSeconds);
+	  }
+	}
+
+	function onPlayerError(){
+		let video = document.getElementById('featured-overlay-video');
+		video.classList += ' hidden';
+	}
+</script>
+
+
+
+<div class="release-logs bg-white">
+
+
+
+			<div id="" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+
+																	<div class="description-text">
+<div class="mb-5 lead text-center">The second update of the Blender 2.80 milestone release is here!
+<p>With again over a thousand fixes and several important updates that were planned for the 2.8 series. In this release you will find UDIM and USD support, MantaFlow fluids and smoke simulation, AI denoising, Grease Pencil improvements, and much more!</p>
+<p><small>February 14, 2020</small></p>
+</div>
+<blockquote class="mb-5 text-center p-4 border-top text-white bg-dark"><p>A <a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/a">number of critical fixes</a> were done as part of the corrective release 2.82a. Make sure you update for a rock solid 2.82! Released on March 12th, 2020.</p></blockquote>
+<hr>
+<div class="embed-responsive embed-responsive-16by9 mr-3 rounded"><iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/EfF2wDXalgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="" class="features__releaselogs_section  major-feature" style="background-image: url(./../../../wp-content/uploads/2020/02/dedouze-tramstation-separator.jpg);								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+
+																	<div class="description-text">
+<div class="my-5 py-5"></div>
+</div>
+
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="physics-reborn" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#physics-reborn" class="features__releaselogs_section-title">
+										Physics Reborn										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>Blender&#8217;s simulations got a major bump with a brand new physically-based liquid/gas simulation system using <a href="http://mantaflow.com/">Mantaflow</a> and improvements in cloth physics.</p>
+</div>
+
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="light-your-fire" class="features__releaselogs_section  major-feature" style="				background-color: #000000;				color: #ffffff;">
+
+								<div class="section-background bg-align-right"><img src="./../../../wp-content/uploads/2020/02/mantaflow_smoke-ram_singh.jpg?x18334"></div>
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-right">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#light-your-fire" class="features__releaselogs_section-title">
+										Light Your Fire										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p class="pb-5 mb-5">The new Mantaflow system allows you to create mind-blowing fire and smoke simulations.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Physics#Gas_Simulations">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="flip-out" class="features__releaselogs_section odd major-feature" style="				background-color: #0038d8;				color: #fff08f;">
+
+								<div class="section-background bg-align-left"><img src="./../../../wp-content/uploads/2020/02/mantaflow_fluid-andy_goralczyk.jpg?x18334"></div>
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-left">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#flip-out" class="features__releaselogs_section-title">
+										FLIP Out										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p class="pb-5 mb-5">Create lifelike liquids with a new FLIP solver.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Physics">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="improved-cloth-simulations" class="features__releaselogs_section  major-feature" style="				background-color: #dbc5d5;				color: #035182;">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#improved-cloth-simulations" class="features__releaselogs_section-title">
+										Improved Cloth Simulations										<span><i class="fa fa-link"></i></span>
+									</a>
+
+
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																<div class="container mb-5">
+									<ul class="nav nav-tabs mb-3 list-bullets-none justify-content-center" role="tablist">
+																				<li class="nav-item">
+											<a class="nav-link py-2 active" id="t-internal-air-pressure-0-tab" data-toggle="pill" href="#t-internal-air-pressure-0" role="tab" aria-controls="t-internal-air-pressure-0" aria-selected="true">
+												Internal Air Pressure											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-internal-cloth-springs-1-tab" data-toggle="pill" href="#t-internal-cloth-springs-1" role="tab" aria-controls="t-internal-cloth-springs-1" aria-selected="false">
+												Internal Cloth Springs											</a>
+										</li>
+																			</ul>
+									<div class="tab-content text-center">
+																					<div class="tab-pane show active" id="t-internal-air-pressure-0" role="tabpanel" aria-labelledby="t-internal-air-pressure-0-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/cloth-test.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>Simulate balloons and cushions with ease.</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-internal-cloth-springs-1" role="tabpanel" aria-labelledby="t-internal-cloth-springs-1-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/inner_springs.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>Make cloth behave like a soft body.</p>
+</div>
+																							</div>
+																			</div>
+								</div>
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="udim" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#udim" class="features__releaselogs_section-title">
+										UDIM										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>The popular tiled-based UV mapping system is now fully integrated in Blender&#8217;s pipeline. </p>
+</div>
+
+																	<a class="read-more" href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv/workflows/udims.html">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																<div class="container mb-5">
+									<ul class="nav nav-tabs mb-3 list-bullets-none justify-content-center" role="tablist">
+																				<li class="nav-item">
+											<a class="nav-link py-2 active" id="t-1001-0-tab" data-toggle="pill" href="#t-1001-0" role="tab" aria-controls="t-1001-0" aria-selected="true">
+												1001											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-1002-1-tab" data-toggle="pill" href="#t-1002-1" role="tab" aria-controls="t-1002-1" aria-selected="false">
+												1002											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-1003-2-tab" data-toggle="pill" href="#t-1003-2" role="tab" aria-controls="t-1003-2" aria-selected="false">
+												1003											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-1004-3-tab" data-toggle="pill" href="#t-1004-3" role="tab" aria-controls="t-1004-3" aria-selected="false">
+												1004											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-1005-4-tab" data-toggle="pill" href="#t-1005-4" role="tab" aria-controls="t-1005-4" aria-selected="false">
+												1005											</a>
+										</li>
+																			</ul>
+									<div class="tab-content text-center">
+																					<div class="tab-pane show active" id="t-1001-0" role="tabpanel" aria-labelledby="t-1001-0-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/udim-01.jpg?x18334" class="img-fluid rounded">
+																																			</div>
+																					<div class="tab-pane " id="t-1002-1" role="tabpanel" aria-labelledby="t-1002-1-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/udim-02.jpg?x18334" class="img-fluid rounded">
+																																			</div>
+																					<div class="tab-pane " id="t-1003-2" role="tabpanel" aria-labelledby="t-1003-2-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/udim-03.jpg?x18334" class="img-fluid rounded">
+																																			</div>
+																					<div class="tab-pane " id="t-1004-3" role="tabpanel" aria-labelledby="t-1004-3-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/udim-04.jpg?x18334" class="img-fluid rounded">
+																																			</div>
+																					<div class="tab-pane " id="t-1005-4" role="tabpanel" aria-labelledby="t-1005-4-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/udim-05.jpg?x18334" class="img-fluid rounded">
+																																			</div>
+																			</div>
+								</div>
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="pixar-usd-export" class="features__releaselogs_section  major-feature" style="				background-color: #196fa0;				color: #ffffff;">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#pixar-usd-export" class="features__releaselogs_section-title">
+										Pixar USD Export										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<div class="row">
+<div class="col-md-6">
+Blender now supports Pixar&#8217;s very own open source <a href="https://graphics.pixar.com/usd/docs/index.html">Universal Scene Description</a>.
+<p>USD files can contain complex layering, overriding, and references to other files. Blender’s USD Exporter takes a much simpler approach.</p>
+</div>
+<div class="col-md-6">
+<img src="./../../../wp-content/uploads/2020/02/pixar_usd_logo.png?x18334">
+</div>
+</div>
+</div>
+
+																	<a class="read-more" href="https://docs.blender.org/manual/en/latest/files/import_export/usd.html">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="cycles-improvements" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#cycles-improvements" class="features__releaselogs_section-title">
+										Cycles Improvements										<span><i class="fa fa-link"></i></span>
+									</a>
+
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Cycles">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<div style="text-align: center; margin-bottom: -15px;">
+<h2>Node Improvements</h2>
+</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="cards-list cards-2  mb-5">
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner">
+
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://developer.blender.org/rB1c2f7b022a">Random Per Island</a>
+
+																													<span class="cards-list-item-excerpt" href="https://developer.blender.org/rB1c2f7b022a"><p>Geometry node now has a Random Per Island option, to randomize textures or colors for different components within a mesh.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner">
+
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://developer.blender.org/rB0406eb1103">Math</a>
+
+																													<span class="cards-list-item-excerpt" href="https://developer.blender.org/rB0406eb1103"><p>Math node has new operations: trunc, snap, wrap, compare, pingpong, sign, radians, degrees, cosh, sinh, tanh, exp, smoothmin and inversesqrt.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner">
+
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://developer.blender.org/rB958d0d4236b1c">Map Range</a>
+
+																													<span class="cards-list-item-excerpt" href="https://developer.blender.org/rB958d0d4236b1c"><p>New interpolation modes: Linear, Stepped Linear, <a href="https://en.wikipedia.org/wiki/Smoothstep">Smoothstep and Smootherstep</a>.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner">
+
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="http://developer.blender.org/rB074c00f9d6">Noise & Wave</a>
+
+																													<span class="cards-list-item-excerpt" href="http://developer.blender.org/rB074c00f9d6"><p>Distortion was improved to distort uniformly in all directions, instead of only diagonally.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+																			</div>
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<div style="margin-bottom: -15px;">
+<h2>Custom Shader AOVs</h2>
+<p>A new AOV Output node can be put anywhere in your shader node tree and will be exposed as a custom render pass.</p>
+</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<p>And even more:</p>
+<h3>Denoising</h3>
+<ul>
+<li>The <strong>Albedo</strong> pass was improved to work better with the OpenImageDenoise compositor node. <a href="http://developer.blender.org/rB4659fa5471">Read more</a>.</li>
+<li>The <strong>Normal</strong> pass was changed to output in camera space to work better with the OptiX denoiser. <a href="http://developer.blender.org/rBd5ca72191c36">Read more</a>.</li>
+</ul>
+<h3 class="mt-4">Faster Rendering on Windows</h3>
+<p>BVH build time on Windows has been significantly reduced by using a better memory allocator, making it similar to Linux and macOS performance. <a href="http://developer.blender.org/rBd60a60f0cb">Read more</a>.</p>
+									</div>
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="ai-denoiser" class="features__releaselogs_section  major-feature" style="				background-color: #5a8f00;				color: #ffffff;">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#ai-denoiser" class="features__releaselogs_section-title">
+										AI Denoiser										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<div class="row">
+<div class="col-6">
+Cycles now supports the AI-Accelerated Denoiser from OptiX, for NVIDIA RTX graphics cards.
+<ul class="mb-5">
+<li>Supports multiple GPUs.</li>
+<li>Impressive results with low samples.</li>
+<li>Built into Blender&#8217;s view layer system.</li>
+</ul>
+<p><small>This AI-Accelerated Denoiser was contributed by NVIDIA.</small>
+</p>
+</div>
+<div class="col-6"><img src="./../../../wp-content/uploads/2019/11/NVIDIA_RTX_itson-e1578907023773.png?x18334" class="img-fluid"></div>
+</div>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Cycles#Denoising">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+																	<div class="mb-5">
+
+																		<div class="images-compare">
+										<div style="display: none;">
+																							<span class="images-compare-label">
+													10 Samples. No denoise.												</span>
+																						<img src="./../../../wp-content/uploads/2020/02/Blender2.82_classroom_10_optix_before-1280x720.jpg?x18334">
+										</div>
+										<div>
+																							<span class="images-compare-label">
+													10 Samples. AI Denoise.												</span>
+																						<img src="./../../../wp-content/uploads/2020/02/Blender2.82_classroom_10_optix_after-1280x720.jpg?x18334">
+										</div>
+									</div>
+																		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="eevee" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#eevee" class="features__releaselogs_section-title">
+										EEVEE										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>Many improvements such as better group node sockets, normal mapping for non-mesh objects, performance and quality of render passes.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/EEVEE">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<div style="text-align: center; margin-bottom: -15px;">
+<h2>Preview Passes in the Viewport</h2>
+<p>Just like in Cycles, you can now pick which pass to see while in Rendered shading mode.</p>
+</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																<div class="container mb-5">
+									<ul class="nav nav-tabs mb-3 list-bullets-none justify-content-center" role="tablist">
+																				<li class="nav-item">
+											<a class="nav-link py-2 active" id="t-combined-0-tab" data-toggle="pill" href="#t-combined-0" role="tab" aria-controls="t-combined-0" aria-selected="true">
+												Combined											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-ambient-occlusion-1-tab" data-toggle="pill" href="#t-ambient-occlusion-1" role="tab" aria-controls="t-ambient-occlusion-1" aria-selected="false">
+												Ambient Occlusion											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-normal-2-tab" data-toggle="pill" href="#t-normal-2" role="tab" aria-controls="t-normal-2" aria-selected="false">
+												Normal											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-mist-3-tab" data-toggle="pill" href="#t-mist-3" role="tab" aria-controls="t-mist-3" aria-selected="false">
+												Mist											</a>
+										</li>
+																			</ul>
+									<div class="tab-content text-center">
+																					<div class="tab-pane show active" id="t-combined-0" role="tabpanel" aria-labelledby="t-combined-0-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/viewport-1-combined-1.jpg?x18334" class="img-fluid rounded">
+																																					<div class="py-3 px-5 mx-5 lead">
+<p>Ambient Occlusion, Normal, Mist, Subsurface Direct and Subsurface Color are supported, with more passes coming in Blender 2.83!</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-ambient-occlusion-1" role="tabpanel" aria-labelledby="t-ambient-occlusion-1-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/viewport-2-ao-1.jpg?x18334" class="img-fluid rounded">
+																																					<div class="py-3 px-5 mx-5 lead">
+<p>Ambient Occlusion, Normal, Mist, Subsurface Direct and Subsurface Color are supported, with more passes coming in Blender 2.83!</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-normal-2" role="tabpanel" aria-labelledby="t-normal-2-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/viewport-3-normals.jpg?x18334" class="img-fluid rounded">
+																																					<div class="py-3 px-5 mx-5 lead">
+<p>Ambient Occlusion, Normal, Mist, Subsurface Direct and Subsurface Color are supported, with more passes coming in Blender 2.83!</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-mist-3" role="tabpanel" aria-labelledby="t-mist-3-tab">
+																																					<img src="./../../../wp-content/uploads/2020/02/viewport-4-mist.jpg?x18334" class="img-fluid rounded">
+																																					<div class="py-3 px-5 mx-5 lead">
+<p>Ambient Occlusion, Normal, Mist, Subsurface Direct and Subsurface Color are supported, with more passes coming in Blender 2.83!</p>
+</div>
+																							</div>
+																			</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<div style="text-align: center; margin-bottom: -15px;" class="container">
+<h2>Volumetrics + Transparency</h2>
+<p>Transparent materials now blend properly with volumetrics.</p>
+</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="mb-5">
+
+																		<div class="images-compare">
+										<div style="display: none;">
+																							<span class="images-compare-label">
+													Before												</span>
+																						<img src="./../../../wp-content/uploads/2020/02/volumetrics-2.81-1-1280x720.jpg?x18334">
+										</div>
+										<div>
+																							<span class="images-compare-label">
+													After												</span>
+																						<img src="./../../../wp-content/uploads/2020/02/volumetrics-2.82-1-1280x720.jpg?x18334">
+										</div>
+									</div>
+																		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="beyond-sculpting" class="features__releaselogs_section  major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#beyond-sculpting" class="features__releaselogs_section-title">
+										Beyond Sculpting										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>After the ground-breaking 2.81 sculpt updates, new features keep pouring in.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Sculpt">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																<div class="container mb-5">
+									<ul class="nav nav-tabs mb-3 list-bullets-none justify-content-center" role="tablist">
+																				<li class="nav-item">
+											<a class="nav-link py-2 active" id="t-pose-brush-with-inverse-kinematics-0-tab" data-toggle="pill" href="#t-pose-brush-with-inverse-kinematics-0" role="tab" aria-controls="t-pose-brush-with-inverse-kinematics-0" aria-selected="true">
+												Pose Brush with Inverse Kinematics											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-slide-relax-brush-1-tab" data-toggle="pill" href="#t-slide-relax-brush-1" role="tab" aria-controls="t-slide-relax-brush-1" aria-selected="false">
+												Slide/Relax Brush											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-multi-plane-scrape-brush-2-tab" data-toggle="pill" href="#t-multi-plane-scrape-brush-2" role="tab" aria-controls="t-multi-plane-scrape-brush-2" aria-selected="false">
+												Multi-plane Scrape Brush											</a>
+										</li>
+																				<li class="nav-item">
+											<a class="nav-link py-2 " id="t-brush-dash-ratio-3-tab" data-toggle="pill" href="#t-brush-dash-ratio-3" role="tab" aria-controls="t-brush-dash-ratio-3" aria-selected="false">
+												Brush Dash Ratio											</a>
+										</li>
+																			</ul>
+									<div class="tab-content text-center">
+																					<div class="tab-pane show active" id="t-pose-brush-with-inverse-kinematics-0" role="tabpanel" aria-labelledby="t-pose-brush-with-inverse-kinematics-0-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/iK_pose_brush_rain.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>IK segments property to control how many IK bones are going to be created for posing. Hold Ctrl to twist the deformation.</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-slide-relax-brush-1" role="tabpanel" aria-labelledby="t-slide-relax-brush-1-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay controls muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/slide_relax_rain.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>Slides the topology of the mesh in the direction of the stroke while trying to preserve the volume.</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-multi-plane-scrape-brush-2" role="tabpanel" aria-labelledby="t-multi-plane-scrape-brush-2-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay controls muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/multiplane_scrape_sphere.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>Scrapes the mesh with two planes at the same time, producing a sharp edge between them.</p>
+</div>
+																							</div>
+																					<div class="tab-pane " id="t-brush-dash-ratio-3" role="tabpanel" aria-labelledby="t-brush-dash-ratio-3-tab">
+																									<div class="embed-responsive embed-responsive-16by9 rounded">
+														<video class="embed-responsive-item" autoplay controls muted loop>
+															<source src="./../../../wp-content/uploads/2020/02/dash_ratio_ryo_murata.mp4" type="video/mp4">
+														</video>
+													</div>
+																																																	<div class="py-3 px-5 mx-5 lead">
+<p>Dash ratio and dash samples brush properties to create dashed strokes.</p>
+</div>
+																							</div>
+																			</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<p>Even more:</p>
+<ul>
+<li>Mask Slice operator: removes the masked vertices from the mesh, with options to fill the produced holes or creating a new mesh object with the removed vertices.</li>
+<li>The symmetrize operator can now run with Dyntopo disabled.</li>
+<li>The sample detail size operator now works with the voxel remesher. It sets the voxel size to a value that produces a mesh with an approximate detail resolution to the area that was sampled.</li>
+</ul>
+<p>Plus more improvements that don&#8217;t even fit here, <a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Sculpt">check them out</a>.</p>
+									</div>
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="grease-pencil" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#grease-pencil" class="features__releaselogs_section-title">
+										Grease Pencil										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>Many changes in the user interface, dopesheet updates, new tools and modifiers.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Grease_Pencil">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="cards-list cards-2  mb-5">
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #efefe2;color: #4d4b47;">
+
+																																									<div class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/greasepencil_multiplestrokes.png?x18334">
+														</div>
+
+																										<div class="cards-list-item-info">
+																													<span class="cards-list-item-title">Multiple Strokes Modifier</span>
+
+																													<span class="cards-list-item-excerpt" href=""><p>Automatically generate multiple strokes around the originals.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #60ca86;color: #ffffff;">
+
+																																									<div class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/final-greasepencil-multiline.jpg?x18334">
+														</div>
+
+																										<div class="cards-list-item-info">
+																													<span class="cards-list-item-title">Polyline Tool</span>
+
+																													<span class="cards-list-item-excerpt" href=""><p>Draw polygon shapes with this new dedicated tool.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #282828;color: #ffffff;">
+
+																																									<a href="https://developer.blender.org/rB98ff6cfa575bbe9680e5a0abf176a9d748ecc2b8" class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/Screenshot-from-2020-02-13-17-31-18.png?x18334">
+														</a>
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://developer.blender.org/rB98ff6cfa575bbe9680e5a0abf176a9d748ecc2b8">Dopesheet Improvements</a>
+
+																													<span class="cards-list-item-excerpt" href="https://developer.blender.org/rB98ff6cfa575bbe9680e5a0abf176a9d748ecc2b8"><p>Quick access to Opacity, Blend and Onion skinning in the channels.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #b7b7b7;color: #313131;">
+
+																																									<a href="https://developer.blender.org/rB5adb3b6882f4" class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/greasepencil_eyedropper.png?x18334">
+														</a>
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://developer.blender.org/rB5adb3b6882f4">New Eyedropper Tool</a>
+
+																													<span class="cards-list-item-excerpt" href="https://developer.blender.org/rB5adb3b6882f4"><p>Easily create materials on the fly with this new tool.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+																			</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="custom-bevel-profiles" class="features__releaselogs_section  major-feature" style="				background-color: #212121;				color: #f4f4f4;">
+
+								<div class="section-background bg-align-right"><img src="./../../../wp-content/uploads/2020/02/Custom_Bevel_Profile_Release_Notes.png?x18334"></div>
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-right">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#custom-bevel-profiles" class="features__releaselogs_section-title">
+										Custom Bevel Profiles										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>The bevel tool and modifier now have the ability use modified profiles beyond the existing super-ellipse control.</p>
+<p>Once the &#8220;Custom Profile&#8221; option is checked, the profile can be changed with the curve widget which is sampled with the number of segments from the bevel.</p>
+</div>
+
+																	<a class="read-more" href="http://developer.blender.org/rBba1e9ae4733a">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="user-interface" class="features__releaselogs_section odd major-feature" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#user-interface" class="features__releaselogs_section-title">
+										User Interface										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>The user interface and user experience keeps getting polished in 2.82; with improvements to the tool system and layout tweaks for consistency.</p>
+</div>
+
+																	<a class="read-more" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="cards-list cards-2  mb-5">
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #1f1f1f;color: #f7f7f7;">
+
+																																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Fallback_Tools" class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/282_ui_fallback_tools.png?x18334">
+														</a>
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Fallback_Tools">Fallback Tools</a>
+
+																													<span class="cards-list-item-excerpt" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Fallback_Tools"><p>Now, when you have a tool active, you can still easily box, lasso or circle select when you click and drag outside the gizmo.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+
+											<div class="cards-list-item-outer">
+												<div class="cards-list-item-inner" style="background-color: #585858;color: #f2f2f2;">
+
+																																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#UV_Gizmos" class="cards-list-item-thumbnail">
+															<img src="./../../../wp-content/uploads/2020/02/282_ui_uv_gizmos.png?x18334">
+														</a>
+
+																										<div class="cards-list-item-info">
+																													<a class="cards-list-item-title" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#UV_Gizmos">UV Gizmos</a>
+
+																													<span class="cards-list-item-excerpt" href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#UV_Gizmos"><p>The UV Editor now supports gizmos for the transform tools, just like the 3D View.</p>
+</span>
+																											</div>
+																									</div>
+											</div>
+
+																			</div>
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Custom_Face_Orientation_colors" target="_blank" class="d-block px-3 py-2">
+														Custom Face Orientation Colors													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Brush_Settings_overhaul" target="_blank" class="d-block px-3 py-2">
+														Brush Settings Overhaul													</a>
+																							</li>
+																					<li>
+																									<a href="https://developer.blender.org/rB8c6ce742391" target="_blank" class="d-block px-3 py-2">
+														Text Editor UI Tweaks													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Industry_Compatible_keymap" target="_blank" class="d-block px-3 py-2">
+														Industry Compatible Keymap													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/UI#Graph_Editor_selection_and_transform_overhaul" target="_blank" class="d-block px-3 py-2">
+														Graph Editor Selection & Transform													</a>
+																							</li>
+																					<li>
+																									<a href="http://developer.blender.org/rB85cf56ecbc6" target="_blank" class="d-block px-3 py-2">
+														Consistent Scrollbars													</a>
+																							</li>
+																					<li>
+																									<a href="http://developer.blender.org/rB7c2217cd126" target="_blank" class="d-block px-3 py-2">
+														New Icons on File Browser													</a>
+																							</li>
+																				</ul>
+									</div>
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="vfx-reference-platform" class="features__releaselogs_section  major-feature" style="				background-color: #585050;				color: #e9e7e7;">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#vfx-reference-platform" class="features__releaselogs_section-title">
+										VFX Reference Platform										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<p>Blender is committed to adhere with the VFX Reference Platform. This helps pipelines that depends on different software to have a common set of libraries they are all compatible with.</p>
+</div>
+
+																	<a class="read-more" href="https://vfxplatform.com/">
+										Read more <i class="fa fa-angle-right"></i>
+									</a>
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="compatibility" class="features__releaselogs_section odd compatibility-warning" style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#compatibility" class="features__releaselogs_section-title">
+										Compatibility										<span><i class="fa fa-link"></i></span>
+									</a>
+
+																	<div class="description-text">
+<ul>
+<li>Loading fluid simulations from previous versions is only partially possible. <a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Physics#Compatibility">Read more </a>.</li>
+<li>Due to changes in the Noise and Wave shader nodes, their pattern can look slightly different.<a href="https://developer.blender.org/rB074c00f9d6">Read more</a>.</li>
+<li>EEVEE: A fix in how transparent materials react to volumetrics will make them look different (as in, properly lit), there is no workaround other than to tweak the affected materials. <a href="https://developer.blender.org/rB39d5d11e022a">Read more</a>.</li>
+</ul>
+</div>
+
+															</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div id="but-wait-theres-more" class="features__releaselogs_section  " style="								">
+
+
+				<div class="container">
+
+					<div class="features__releaselogs_section-box box-align-full">
+
+						<div class="features__releaselogs_section-intro ">
+
+							<div class="features__releaselogs_section-description">
+
+																	<a href="#but-wait-theres-more" class="features__releaselogs_section-title">
+										But Wait! There's More										<span><i class="fa fa-link"></i></span>
+									</a>
+
+
+															</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+																	<div class="lead p-5">
+										<ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap text-center">
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Modeling#Bevel" target="_blank" class="d-block px-3 py-2">
+														Bevel Improvements													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Add-ons#Rigify" target="_blank" class="d-block px-3 py-2">
+														Rigify													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Add-ons#Amaranth_Toolkit" target="_blank" class="d-block px-3 py-2">
+														Amaranth Toolkit add-on													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Rigging#Constraints" target="_blank" class="d-block px-3 py-2">
+														Stretch To Swing Rotation													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Add-ons#Sun_Position" target="_blank" class="d-block px-3 py-2">
+														Sun Position add-on													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/EEVEE#Improvements" target="_blank" class="d-block px-3 py-2">
+														EEVEE Improvements													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Add-ons#PDT" target="_blank" class="d-block px-3 py-2">
+														Precision Drawing Tools for CAD													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Rigging#F-Curve_Selection_and_Transform" target="_blank" class="d-block px-3 py-2">
+														F-Curve Selection & Transform Improvements													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Add-ons#Collection_Manager" target="_blank" class="d-block px-3 py-2">
+														Collection Manager add-on													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Import_%26_Export#glTF" target="_blank" class="d-block px-3 py-2">
+														glTF Improvements													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Cycles#Improvements" target="_blank" class="d-block px-3 py-2">
+														Cycles Performance													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Rigging#Playblast_Only_Keyframes" target="_blank" class="d-block px-3 py-2">
+														Playblast Only Keyframes													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Rigging#F-Curve_Decimation" target="_blank" class="d-block px-3 py-2">
+														F-Curve Decimation													</a>
+																							</li>
+																					<li>
+																									<a href="http://developer.blender.org/rBf050fa325375" target="_blank" class="d-block px-3 py-2">
+														Weld Modifier													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Import_%26_Export#Alembic" target="_blank" class="d-block px-3 py-2">
+														Alembic Normals Export													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Sculpt#Paint" target="_blank" class="d-block px-3 py-2">
+														Better Brush Defaults													</a>
+																							</li>
+																					<li>
+																									<a href="http://developer.blender.org/rBe45cfb574ee7" target="_blank" class="d-block px-3 py-2">
+														Improved Solidify Modifier													</a>
+																							</li>
+																					<li>
+																									<a href="https://wiki.blender.org/wiki/Reference/Release_Notes/2.82/Python_API" target="_blank" class="d-block px-3 py-2">
+														Python API Changes													</a>
+																							</li>
+																				</ul>
+									</div>
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+		<div id="major-feature" class="features__releaselogs_section major-feature py-5">
+			<div class="container">
+				<div class="features__releaselogs_section-box">
+					<div class="features__releaselogs_section-intro ">
+						<div class="features__releaselogs_section-description text-center">
+							<span class="features__releaselogs_section-title">
+								Stay up-to-date
+							</span>
+							<div class="description-text pb-3">
+								<div class="row pb-3">
+									<div class="col-md-6">
+										<a href="https://www.youtube.com/playlist?list=PLa1F2ddGya_87HJ72v_IgKUTNLIXSMfvB"><h3 class="my-3">Weekly Live Streams</h3></a>
+										<div class="embed-responsive embed-responsive-16by9 rounded">
+											​<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLa1F2ddGya_87HJ72v_IgKUTNLIXSMfvB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<a href="https://www.youtube.com/playlist?list=PLyGoWAGEPJ1DLzhm1_dhuLVe7wT1kBFNP"><h3 class="my-3">Development Videos</h3></a>
+										<div class="embed-responsive embed-responsive-16by9 rounded">
+											​<iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLyGoWAGEPJ1DLzhm1_dhuLVe7wT1kBFNP" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+
+								<hr>
+
+								<small class="text-muted">Follow the official hashtag for Blender stuff on social media <a href="https://twitter.com/search?q=%23b3d" target="_blank">#b3d</a></small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="features__releaselogs_section-box box py-5">
+					<div class="features__releaselogs_section-description py-0 px-3">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="https://fund.blender.org/" class="text-secondary">
+									<h2 class="py-2">Blender Development Fund</h2>
+								</a>
+								<p class="lead">
+									The donation program to support maintaining and improving Blender, for everyone.
+									<a href="https://fund.blender.org/">Become a member for as little as €5 per month.</a>
+								</p>
+							</div>
+							<div class="col-md-4 text-center display-1">
+								<a href="https://fund.blender.org/" class="text-danger h-100 justify-content-center align-items-center d-flex text-decoration-none">
+									<i class="fa fa-heart"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+		 <!-- main container -->
+
+		<div class="footer-navigation pt-5"><div class="container"><div class="row">
+<div class="col-6 col-md-2">
+<a href="./../../index.html" class="sitemap-title pb-2">Blender</a><ul>
+<li><a href="./../../index.html" title="Download Blender">Download</a></li>
+<li><a href="./../../../features/index.html" title="Blender Features">Features</a></li>
+<li><a href="https://developer.blender.org/diffusion/B/" title="Source Code">Source</a></li>
+<li><a href="./../../../about/license/index.html" title="License">License</a></li>
+<li><a href="./../../../about/logo/index.html" title="Logo & Trademark">Logo & Trademark</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../foundation/index.html" class="sitemap-title pb-2">Organization</a><ul>
+<li><a href="./../../../foundation/index.html" title="Blender Foundation">Foundation</a></li>
+<li><a href="./../../../institute/index.html" title="Blender Institute">Institute</a></li>
+<li><a href="https://blender.studio/" title="Blender Studio">Studio</a></li>
+<li><a href="https://www.blendernetwork.org/" title="The Network of Blender Professionals">Blender Network</a></li>
+<li><a href="./../../../conference/index.html" title="Conference">Blender Conference</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../get-involved/index.html" class="sitemap-title pb-2">Get Involved</a><ul>
+<li><a href="./../../../foundation/donation-payment/index.html" title="Donate">Donate</a></li>
+<li><a href="./../../../get-involved/developers/index.html" title="Development">Development</a></li>
+<li><a href="./../../../get-involved/documenters/index.html" title="Documentation">Documentation</a></li>
+<li><a href="./../../../get-involved/index.html" title="Education">Education</a></li>
+<li><a href="./../../../certification/index.html" title="Certification">Certification</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../community/index.html" class="sitemap-title pb-2">Support</a><ul>
+<li><a href="./../../../community/index.html" title="Community">Community</a></li>
+<li><a href="https://docs.blender.org/manual/en/dev/" title="Manual">Manual</a></li>
+<li><a href="./../../../support/tutorials/index.html" title="Tutorials">Tutorials</a></li>
+<li><a href="https://docs.blender.org/api/current/" title="Python API">Python API</a></li>
+<li><a href="https://devtalk.blender.org/" title="Developers Forum">Developers Forum</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="./../../../about/website/index.html" class="sitemap-title pb-2">blender.org</a><ul>
+<li><a href="./../../../news/index.html" title="News">News</a></li>
+<li><a href="./../../../jobs/index.html" title="Jobs">Jobs</a></li>
+<li><a href="./../../../about/website/index.html" title="Website">Website</a></li>
+<li><a href="https://opendata.blender.org/" title="Open Data">Open Data</a></li>
+<li><a href="https://fund.blender.org/" title="Contact">Development Fund</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-2">
+<a href="https://twitter.com/blender_org" class="sitemap-title pb-2">Follow Blender</a><div class="social-icons">
+<a href="https://youtube.com/BlenderFoundation" title="Blender's Official YouTube channel" target="_blank" class="social-icons__youtube"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></i></a><a href="https://twitter.com/blender" title="Follow Blender on Twitter" target="_blank" class="social-icons__twitter"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></i></a><a href="https://instagram.com/blender.official/" title="Follow Blender on Instagram" target="_blank" class="social-icons__instagram"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M256,49.471c67.266,0,75.233.257,101.8,1.469,24.562,1.121,37.9,5.224,46.778,8.674a78.052,78.052,0,0,1,28.966,18.845,78.052,78.052,0,0,1,18.845,28.966c3.45,8.877,7.554,22.216,8.674,46.778,1.212,26.565,1.469,34.532,1.469,101.8s-0.257,75.233-1.469,101.8c-1.121,24.562-5.225,37.9-8.674,46.778a83.427,83.427,0,0,1-47.811,47.811c-8.877,3.45-22.216,7.554-46.778,8.674-26.56,1.212-34.527,1.469-101.8,1.469s-75.237-.257-101.8-1.469c-24.562-1.121-37.9-5.225-46.778-8.674a78.051,78.051,0,0,1-28.966-18.845,78.053,78.053,0,0,1-18.845-28.966c-3.45-8.877-7.554-22.216-8.674-46.778-1.212-26.564-1.469-34.532-1.469-101.8s0.257-75.233,1.469-101.8c1.121-24.562,5.224-37.9,8.674-46.778A78.052,78.052,0,0,1,78.458,78.458a78.053,78.053,0,0,1,28.966-18.845c8.877-3.45,22.216-7.554,46.778-8.674,26.565-1.212,34.532-1.469,101.8-1.469m0-45.391c-68.418,0-77,.29-103.866,1.516-26.815,1.224-45.127,5.482-61.151,11.71a123.488,123.488,0,0,0-44.62,29.057A123.488,123.488,0,0,0,17.3,90.982C11.077,107.007,6.819,125.319,5.6,152.134,4.369,179,4.079,187.582,4.079,256S4.369,333,5.6,359.866c1.224,26.815,5.482,45.127,11.71,61.151a123.489,123.489,0,0,0,29.057,44.62,123.486,123.486,0,0,0,44.62,29.057c16.025,6.228,34.337,10.486,61.151,11.71,26.87,1.226,35.449,1.516,103.866,1.516s77-.29,103.866-1.516c26.815-1.224,45.127-5.482,61.151-11.71a128.817,128.817,0,0,0,73.677-73.677c6.228-16.025,10.486-34.337,11.71-61.151,1.226-26.87,1.516-35.449,1.516-103.866s-0.29-77-1.516-103.866c-1.224-26.815-5.482-45.127-11.71-61.151a123.486,123.486,0,0,0-29.057-44.62A123.487,123.487,0,0,0,421.018,17.3C404.993,11.077,386.681,6.819,359.866,5.6,333,4.369,324.418,4.079,256,4.079h0Z"></path><path d="M256,126.635A129.365,129.365,0,1,0,385.365,256,129.365,129.365,0,0,0,256,126.635Zm0,213.338A83.973,83.973,0,1,1,339.974,256,83.974,83.974,0,0,1,256,339.973Z"></path><circle cx="390.476" cy="121.524" r="30.23"></circle></svg></i></a><a href="https://www.facebook.com/YourOwn3DSoftware/" title="Follow Blender on Facebook" target="_blank" class="social-icons__facebook"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg></i></a><a href="https://www.linkedin.com/company/blender-org/" title="Follow Blender on LinkdIn" target="_blank" class="social-icons__linkedin"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></i></a>
+</div>
+<hr class="mb-0">
+<a href="https://code.blender.org/" class="sitemap-title mt-0 py-2">Development News</a><div class="social-icons">
+<a href="https://youtube.com/BlenderDevelopers" title="Official YouTube channel for Blender development news" target="_blank" class="social-icons__youtube"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></i></a><a href="https://twitter.com/BlenderDev" title="Follow Blender Developers on Twitter" target="_blank" class="social-icons__twitter"><i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></i></a>
+</div>
+</div>
+</div></div></div>
+<footer class="footer-note">Artistic freedom starts with Blender<i><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg></i><span>The Free and Open Source 3D Creation Suite</span><div id="hop" title="Be awesome in space"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></div>
+<script>var hop = document.getElementById("hop");
+hop.onclick = function(e){ window.scrollTo(0, 0);}
+window.addEventListener("scroll", function(){if(window.pageYOffset > 250){document.body.classList.add("is-scrolled")}else{document.body.classList.remove("is-scrolled")}});</script></footer>	<script src="./../../../wp-content/themes/bthree/assets/js/generated/tutti.min.js?x18334"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.images-compare').imagesCompare();
+	});
+</script>
+
+<script type="text/javascript" src="./../../../wp-includes/js/wp-embed.min.js?x18334" id="wp-embed-js"></script>
+<script type="text/javascript" src="./../../../wp-content/themes/bthree/assets/js/hammer-2.0.8.min.js?x18334" id="hammer-js"></script>
+<script type="text/javascript" src="./../../../wp-content/themes/bthree/assets/js/jquery.images-compare-0.2.5.js?x18334" id="media-compare-js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-1418081-1', 'blender.org');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+</script>
+
+		</body>
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 0/454 objects using memcache
+Page Caching using memcache
+Database Caching using memcache
+
+Served from: blender.org @ 2021-03-16 01:35:16 by W3 Total Cache
+-->
+</html>
